@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+/*@mixin section(){
+    margin-top: 50px;
+    margin-bottom: 20px ;
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,30 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#article1, h1 {
+  text-align: center;
+}
+
+.paragrephe1, .paragraphe2 {
+  display: flex;
+  float: left;
+  position: relative;
+  align-items: flex-start;
+}
+
+.image_vieux_danse {
+  display: flex;
+  justify-content: end;
+  float: right;
+  width: 80px;
+  height: 80px;
 }
 
 .header {

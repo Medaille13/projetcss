@@ -10,3 +10,34 @@
   html {
     scroll-behavior: smooth;
   }
+
+  article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #article1, h1 {
+    text-align: center;
+  }
+
+  .paragrephe1, .paragraphe2{
+    display: flex;
+    float: left;
+    position: relative;
+    align-items: flex-start;
+  }
+  
+      .image_vieux_danse {
+        display: flex;
+        justify-content: end;
+        float: right;
+        width: 80px;
+        height: 80px;
+        }
+      
+  
+
+      
+    
+      
+    

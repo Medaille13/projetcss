@@ -23,7 +23,11 @@
     </div>
 </header>
 <section>
-<h1></h1>
+<article class="article1">
+
+<h1>Votre résidence autonomie à Avon</h1>
+
+<p>Un environnement de qualité pour une vie adaptée aux besoins des seniors autonomes.</p>
 
 <!-- Slider main container -->
 <div class="swiper">
@@ -31,8 +35,17 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">Slide 1</div>
+    <div class="img-box">
+            <img src="./image/resid1.jpg" alt="">
+        </div>
     <div class="swiper-slide">Slide 2</div>
+    <div class="img-box">
+            <img src="./image/resid2.jpg" alt="">
+        </div>
     <div class="swiper-slide">Slide 3</div>
+    <div class="img-box">
+            <img src="./image/resid3.jpg" alt="">
+        </div>
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -44,10 +57,60 @@
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
 </div>
+</article>
+</section>
 
+<section>
+  <article class="article2">
+<h2>Un concept accessible,<br>pour les seniors aux envies de liberté et de sécurité</h2>
+<div class="paragraphe1">
+<p>Short explanation of your company's partnership
+program and policy. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Donec egestas metus
+metus, in bibendum lacus rutrum vitae. Nam posuere
+est ut odio efficitur, id tristique orci consectetur.</p>
+</div>
+<h3>See Immediate Benefits</h3>
+<div class="paragraphe2">
 
+<p>Maecenas id lectus sed arcu hendrerit tincidunt. Duis
+feugiat magna at gravida finibus. Aenean dapibus
+tincidunt dolor ac finibus. Donec vel ligula dui. Sed
+dignissim dui eget consectetur sodales.</p>
+</div>
+<div class="image_vieux_danse">
+<img src="./image/visuel_1.jpg" alt="" >
+</div>
+  </article>
+</section>
 
+<section>
+  <article class="article3">
 
+  </article>
+</section>
+<section>
+  <article class="article4">
+
+  </article>
+</section>
+
+<section>
+  <article class="article5">
+
+  </article>
+</section>
+
+<section>
+  <article class="article6">
+
+  </article>
+</section>
+
+<section>
+  <article class="article7">
+
+  </article>
 </section>
   
   
