@@ -11,32 +11,94 @@
     scroll-behavior: smooth;
   }
 
-  article {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  section {
+    // dans un premier temps toujours travailler en padding et si non résultat voulu essayer en margin
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  #article1, h1 {
+  article {
+    /*margin-top: 10px;
+    margin-bottom: 10px;*/
+  }
+
+  h1{@include h1();}
+  #article1 {
     text-align: center;
   }
+  h2{@include h2();}
+  h3{@include h3();}
 
-  .paragrephe1, .paragraphe2{
+ 
+.article2 {
+  @include maxwrap;
+
+  .boite{
     display: flex;
-    float: left;
-    position: relative;
-    align-items: flex-start;
+    justify-content:flex-start; //tout mon contenu sera aligné  car flex , 
+    flex-flow:column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+    align-items:center ; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
+    gap: 20px; //permet de faire un espacement sans utiliser margin et padding,   
+    
+    @media screen and (min-width:1024px) {
+    flex-flow:row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+    gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
+  }
+    font-size: 14px;
+
+    .contenu_1{   
+      text-align: center;   
+      display:flex;
+      justify-content: flex-start;
+      flex-flow:column nowrap;
+      align-items:center;
+      gap:20px;
+      @media screen and (min-width:1024px) {
+        width:50%;
+        text-align:left;
+        align-items:flex-start;
+
+    }
+    }
+
+      figure {
+        /*width: 300px;*/
+        @media screen and (min-width:1024px) {
+          width:50%;
+        }
+        img {
+          display:block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; 
+          object-position: center;
+        }
+      }    
+  }
+}
+
+
+
+  .article3 {
+
+    @include maxwrap;
+
+    iframe{
+      display: flex;
+      text-align: center;
+      width: 95%;
+      align-items: center;
+      margin-top: 50px;
+    }
   }
   
-      .image_vieux_danse {
-        display: flex;
-        justify-content: end;
-        float: right;
-        width: 80px;
-        height: 80px;
-        }
-      
-  
 
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
       
     
       

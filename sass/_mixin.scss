@@ -22,39 +22,42 @@
     font-family: $fontfamily-var;
     color : $color;
     font-size : 40px;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center; 
 }
 
 @mixin h2($color:$black){
     font-family: $fontfamily-var;
     color: $color;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 700;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
+    @media screen and (min-width:1024px) {
+        font-size: 30px;
+    }
 }
 
 @mixin h3($color:$black){
     font-family: $fontfamily-var;
     color: $color;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 700;
 }
 
 @mixin h4($color:$black){
     font-family: $fontfamily-var;
     color: $color;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 700;
 }
 
 @mixin h5($color:$black){
     font-family: $fontfamily-var;
     color: $color;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 700;
 }
 
 //la font-size par défaut sur les navigateurs (dépend des graphistes ou maquette) est entre 14 et 16px

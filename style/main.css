@@ -16,28 +16,120 @@ html {
   scroll-behavior: smooth;
 }
 
-article {
-  margin-top: 10px;
-  margin-bottom: 10px;
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#article1, h1 {
+article {
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
 }
 
-.paragrephe1, .paragraphe2 {
-  display: flex;
-  float: left;
-  position: relative;
-  align-items: flex-start;
+#article1 {
+  text-align: center;
 }
 
-.image_vieux_danse {
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.article2 {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article2 .boite {
   display: flex;
-  justify-content: end;
-  float: right;
-  width: 80px;
-  height: 80px;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .article2 .boite {
+    flex-flow: row-reverse nowrap;
+    gap: 40px;
+  }
+}
+.article2 .boite .contenu_1 {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .article2 .boite .contenu_1 {
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+.article2 .boite figure {
+  /*width: 300px;*/
+}
+@media screen and (min-width: 1024px) {
+  .article2 .boite figure {
+    width: 50%;
+  }
+}
+.article2 .boite figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article3 {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article3 iframe {
+  display: flex;
+  text-align: center;
+  width: 95%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 .header {
