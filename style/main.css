@@ -37,6 +37,7 @@ h1 {
 }
 
 #article1 {
+  align-items: center;
   text-align: center;
 }
 
@@ -120,15 +121,63 @@ h3 {
   margin-right: auto;
 }
 .article3 iframe {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  text-align: center;
-  width: 95%;
+  justify-content: center;
+  flex-flow: nowrap;
   align-items: center;
-  margin-top: 50px;
+  width: 1000px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.article3 .boite2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1000px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .article3 .boite2 {
+    flex-flow: row-reverse nowrap;
+    gap: 40px;
+  }
+}
+.article3 .boite2 .swiper2 {
+  width: 600px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.article3 .boite2 .contenu_2 {
+  order: -1;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .article3 .boite2 .contenu_2 {
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .swiper {
   max-width: 940px;
+  margin-bottom: 15px;
+  align-items: center;
 }
 
 .header {

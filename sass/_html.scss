@@ -26,6 +26,7 @@
 
   h1{@include h1();}
   #article1 {
+    align-items: center;
     text-align: center;
   }
   h2{@include h2();}
@@ -82,24 +83,69 @@
 
 
   .article3 {
-
     @include maxwrap;
-
     iframe{
+      @include maxwrap;
       display: flex;
-      text-align: center;
-      width: 95%;
+      justify-content: center;
+      flex-flow: nowrap;
       align-items: center;
-      margin-top: 50px;
+      width:1000px;
+      padding-top: 50px;
+      padding-bottom: 10px;
     }
-  }
+
+    .boite2{
+      display: flex;
+      justify-content:flex-end; //tout mon contenu sera aligné  car flex , 
+      flex-flow:column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+      align-items:center ; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
+      gap: 1000px; //permet de faire un espacement sans utiliser margin et padding,   
+      
+      @media screen and (min-width:1024px) {
+      flex-flow:row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+      gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
+    }
+      font-size: 14px;
+
+      .swiper2 {
+        //max-width: 40px;
+        width: 600px;
+        height: 300px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content:flex-end; //tout mon contenu sera aligné  car flex , 
+        flex-flow:column nowrap;
+        align-items:center ;
+      }
   
+      .contenu_2{   
+        order: -1;
+        text-align: center;   
+        display:flex;
+        justify-content: flex-start;
+        flex-flow:column nowrap;
+        align-items:center;
+        gap:20px;
+        @media screen and (min-width:1024px) {
+          width:50%;
+          text-align:left;
+          align-items:flex-start;
+  
+      }
+    }}
+  }  
 
   .swiper {
     max-width: 940px;
     //width: 600px;
     //height: 300px;
+    margin-bottom: 15px;
+    align-items: center;
   }
+
+  
       
     
       
