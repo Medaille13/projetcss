@@ -80,14 +80,33 @@
 }*/
 
 @mixin button(){
-
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 @mixin date_card(){
 
 }
-@mixin button_card(){
 
+@mixin button_card(){
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 @mixin title_card(){

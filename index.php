@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link href="./style/main.css<?php echo '?v='.time(); ?>" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <link href="./node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./style/main.css<?php echo '?v='.time(); ?>" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
 <header id="barmenu" class="header">
     <div class="menu-total">
     <div class="logo">
-    <a href=""><img src="./image/logo.jpg" alt="" class="logomenu"></img></a>
+    <a href=""><img src="./image/logo.jpg" alt="" class="logomenu"></a>
     </div>
     <nav id="menu-haut">
     <a href="#section1" class="menu" >Présentation</a>
@@ -129,6 +128,9 @@ dignissim dui eget consectetur sodales.</p>
     certains sont destinés aux personnes à mobilité réduite, en
     rez-de-chaussée.
   </p>
+  <a href="https://sentry.io/answers/">
+  <button>Consulter la brochure</button>
+</a>
 </div>
 </div>
   </article>
@@ -137,6 +139,19 @@ dignissim dui eget consectetur sodales.</p>
 
 <section>
   <article class="article4">
+  <div class="boite3">
+  <h2>Participez aux Rendez-vous découvertes</h2>
+
+  <div class="contenu3"></div>
+  <p> Dès le mois de mars 2021, la résidence Jean-Fontenelle vous ouvre ses portes !
+Venez rencontrer notre équipe d'encadrants et animateurs, visitez nos appartements témoins
+et profitez du cadre de vie des résidents.
+Les mesures sanitaires adéquates ont été mises en place pour la protection de tous.
+Au plaisir de vous rencontrer ! </p>
+</div>
+<div class="button1">
+
+</div>
 
   </article>
 </section>
@@ -149,7 +164,35 @@ dignissim dui eget consectetur sodales.</p>
 
 <section>
   <article class="article6">
+<h2>Dernières actualités de la résidence</h2>
+<div class="slide-container">
+  <div class="slide-content">
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="image-content">
+          <div class="overlay">
 
+          <div class="card-image">
+            <img src="" alt="" class="card-img">
+          </div>
+          </div>
+          <div class="card-content">
+            <h3>Mai 24, 2024</h3>
+            <input
+            type="datetime-local"
+            id="meeting-time"
+            name="meeting-time"
+            value="2018-06-12T19:30"
+            min="2018-06-07T00:00"
+            max="2018-06-14T00:00" />
+            <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
+            <button class="button-card">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </article>
 </section>
 
@@ -165,57 +208,7 @@ dignissim dui eget consectetur sodales.</p>
 <div>© 2020 - LogiRys</div><nav class="footer-bas"><aside>|</aside><a href="">Mentions légales </a><aside>|</aside><a href="">Politique de protection des données</a></nav>
   </div>
 </footer>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 <script src="./javascript/app.js" <?php echo '?v='.time(); ?>></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" <?php echo '?v='.time(); ?>></script>
-<script>
-
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" <?php echo '?v='.time(); ?>></script>
-<script>
-
-  const swiper2 = new Swiper2('.swiper2', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination2',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar2',
-  },
-});
-</script>
 </body>
 </html>

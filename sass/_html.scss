@@ -146,7 +146,49 @@
   }
 
   
-      
+
+
+//partie ou il y a le swiper et les card successive 
+//le dupliquer et mettre en place le swiper js pour cette partie là
+//et faire la mixin pour la réitération du css  
+.slide-content{
+  margin: 0 40px;
+}      
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: rgb(0, 179, 255);
+
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  row-gap: 5px;
+}
+
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}  
     
-      
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.button-card {
+  border: none;
+  background-color: rgb(0, 179, 255);
+}
     
