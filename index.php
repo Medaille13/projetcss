@@ -27,7 +27,7 @@
 <article class="article1">
 
 <!-- Slider main container -->
-<div class="swiper">
+<div class="swiper" id="swipe-header">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -42,15 +42,13 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-  
 </div>
 
+<div class="content-1">
 <h1>Votre résidence autonomie à Avon</h1>
 
 <p>Un environnement de qualité pour une vie adaptée aux besoins des seniors autonomes.</p>
-
+</div>
 
 </article>
 </section>
@@ -95,7 +93,7 @@ dignissim dui eget consectetur sodales.</p>
 <div class="boite2">
 
 <!-- Slider main container -->
-<div class="swiper swiper2">
+<div class="swiper swiper2" id="swiper-mini">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -109,9 +107,6 @@ dignissim dui eget consectetur sodales.</p>
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar2"></div>
   
 </div>
 

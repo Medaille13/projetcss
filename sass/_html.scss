@@ -17,20 +17,44 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @media screen and (min-width: 768px){
+      padding:0;
+    }
   }
 
-  article {
+  /*article {
     /*margin-top: 10px;
-    margin-bottom: 10px;*/
-  }
+    margin-bottom: 10px;
+    }*/
 
-  h1{@include h1();}
-  #article1 {
-    align-items: center;
-    text-align: center;
-  }
+
+// un align item sans display flex/grid ne fonctionne pas
+
+
+  h1{@include h1();}    
   h2{@include h2();}
   h3{@include h3();}
+
+.article1 {
+  background-color: blueviolet;
+  .swiper {
+    //margin-bottom: 15px;
+
+    .swiper-slide {
+      object-fit: cover; //contain aussi mais déforme
+      height: 300px;
+
+      @media screen and (min-width:768px)
+      {
+        height: 450px;
+      }
+    }
+  }
+  .content-1{
+    text-align: center;
+  }
+}
 
  
 .article2 {
@@ -137,13 +161,7 @@
     }}
   }  
 
-  .swiper {
-    max-width: 940px;
-    //width: 600px;
-    //height: 300px;
-    margin-bottom: 15px;
-    align-items: center;
-  }
+
 
   
 

@@ -1,46 +1,42 @@
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('#swipe-header', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  autoHeight: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '#swipe-header .swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#swipe-header .swiper-button-next',
+    prevEl: '#swipe-header .swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
 
 
 
-  const swiper2 = new Swiper2('.swiper2', {
+  const swiper2 = new Swiper('#swiper-mini', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination2',
+    el: '#swiper-mini .swiper-pagination2',
+    clickable: true,
+
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#swiper-mini .swiper-button-next',
+    prevEl: '#swiper-mini .swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar2',
-  },
 });

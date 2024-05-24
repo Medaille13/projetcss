@@ -22,22 +22,21 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-article {
-  /*margin-top: 10px;
-  margin-bottom: 10px;*/
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0;
+  }
 }
 
+/*article {
+  /*margin-top: 10px;
+  margin-bottom: 10px;
+  }*/
 h1 {
   font-family: "Poppins", sans-serif;
   color: #222;
   font-size: 40px;
   font-weight: 700;
-  text-align: center;
-}
-
-#article1 {
-  align-items: center;
   text-align: center;
 }
 
@@ -61,6 +60,22 @@ h3 {
   color: #222;
   font-size: 24px;
   font-weight: 700;
+}
+
+.article1 {
+  background-color: blueviolet;
+}
+.article1 .swiper .swiper-slide {
+  object-fit: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .article1 .swiper .swiper-slide {
+    height: 450px;
+  }
+}
+.article1 .content-1 {
+  text-align: center;
 }
 
 .article2 {
@@ -172,12 +187,6 @@ h3 {
     text-align: left;
     align-items: flex-start;
   }
-}
-
-.swiper {
-  max-width: 940px;
-  margin-bottom: 15px;
-  align-items: center;
 }
 
 .slide-content {
