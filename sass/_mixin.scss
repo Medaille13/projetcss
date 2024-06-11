@@ -4,29 +4,30 @@
 //pour exemple : utilisation '@include maxwrap' permet d'utiliser la fonction
 //pour exemple : utilisation '@include maxwrap(800px)' permet d'utiliser la fonction avec un maximum de 800px
 
-@mixin maxwrap($width:1000px){
+@mixin maxwrap($width:1000px) {
     width: 100%;
     max-width: $width;
     margin-left: auto;
     margin-right: auto;
 }
 
-@mixin boxshadow(){
+@mixin boxshadow() {
     // le box shadow est constitué de 3 parties ou plus , le 1er px gauche droite, le second haut ou bas , 3e flou
     // 4e l'épaisseur et en 5e la couleur https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow
     //box-shadow: 1px 1px 10px rgba($black,0.3);
     box-shadow: 1px 1px 10px $blacklight;
 }
+
 //en paramètre est mis la couleur noir, mais peut-être changé ensuite au besoin.
-@mixin h1($color:$black){
+@mixin h1($color:$black) {
     font-family: $fontfamily-var;
-    color : $color;
-    font-size : 40px;
+    color: $color;
+    font-size: 40px;
     font-weight: 700;
-    text-align: center; 
+    text-align: center;
 }
 
-@mixin h2($color:$black){
+@mixin h2($color:$black) {
     font-family: $fontfamily-var;
     color: $color;
     font-size: 24px;
@@ -34,26 +35,27 @@
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
+
     @media screen and (min-width:1024px) {
         font-size: 30px;
     }
 }
 
-@mixin h3($color:$black){
+@mixin h3($color:$black) {
     font-family: $fontfamily-var;
     color: $color;
     font-size: 24px;
     font-weight: 700;
 }
 
-@mixin h4($color:$black){
+@mixin h4($color:$black) {
     font-family: $fontfamily-var;
     color: $color;
     font-size: 20px;
     font-weight: 700;
 }
 
-@mixin h5($color:$black){
+@mixin h5($color:$black) {
     font-family: $fontfamily-var;
     color: $color;
     font-size: 18px;
@@ -61,13 +63,13 @@
 }
 
 //la font-size par défaut sur les navigateurs (dépend des graphistes ou maquette) est entre 14 et 16px
-@mixin paragraphe($color:$grey){
-    font-family : $fontfamily-var;
-    color : $color;
+@mixin paragraphe($color:$grey) {
+    font-family: $fontfamily-var;
+    color: $color;
     font-size: 14px;
 }
 
-@mixin margin(){
+@mixin margin() {
     margin-top: $margin-top;
     margin-bottom: $margin-bottom;
 }
@@ -79,7 +81,7 @@
     margin-bottom: 20px ;
 }*/
 
-@mixin button(){
+@mixin button() {
     background-color: black;
     border-radius: 4px;
     color: white;
@@ -92,11 +94,9 @@
     cursor: pointer;
 }
 
-@mixin date_card(){
+@mixin date_card() {}
 
-}
-
-@mixin button_card(){
+@mixin button_card() {
     background-color: black;
     border-radius: 4px;
     color: white;
@@ -109,10 +109,8 @@
     cursor: pointer;
 }
 
-@mixin title_card(){
-    
-}
+@mixin title_card() {}
 
-@mixin card(){
-//je peux appeler la mixin date_card et button_card au bon endroit les autres mixin
+@mixin card() {
+    //je peux appeler la mixin date_card et button_card au bon endroit les autres mixin
 }

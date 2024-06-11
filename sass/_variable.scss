@@ -1,7 +1,8 @@
 //font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
 
-$fontfamily-var : "Poppins", sans-serif;
+$fontfamily-var : "Poppins",
+sans-serif;
 
 
 //variable
@@ -11,7 +12,7 @@ $fontfamily-var : "Poppins", sans-serif;
 $black : #222;
 $white : #fff;
 $grey : grey;
-$blacklight : rgba($black,0.3);
+$blacklight : rgba($black, 0.3);
 
 // margin haut bas
 $margin-top : margin-top 10px;

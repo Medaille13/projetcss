@@ -1,114 +1,115 @@
 .header {
-    width: 100%;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    /* display: flex;
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  /* display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;*/
-    box-sizing: border-box;
-    background-color: $white;
-    //box-shadow: 1px 1px 10px $blacklight ;
-    @include boxshadow;
-  
-    .menu-total{
-      display:flex;
-      flex-flow: row nowrap; // flex flow doit toujours prendre 2 élémentations, concaténation de flex direction et de flex wrap. Le premi row ou column par exemple, et le second si débordement ou à la ligne wrap ou nowrap
-      justify-content: center;
-      align-items: center;
-      @include maxwrap;
-      /*width: 100%;
+  box-sizing: border-box;
+  background-color: $white;
+  //box-shadow: 1px 1px 10px $blacklight ;
+  @include boxshadow;
+
+  .menu-total {
+    display: flex;
+    flex-flow: row nowrap; // flex flow doit toujours prendre 2 élémentations, concaténation de flex direction et de flex wrap. Le premi row ou column par exemple, et le second si débordement ou à la ligne wrap ou nowrap
+    justify-content: center;
+    align-items: center;
+    @include maxwrap;
+    /*width: 100%;
       max-width: 1000px;*/
-      /*margin-left: auto;
-      margin-right: auto;*/ /*2nde possibilité pour tout centré*/ 
-        
-          .logo {
-            float: left;
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 120px;
-            height: 70px;
-            margin-left: 0px;
-            margin-right: 0px;
-            text-align: center;
-            box-sizing: border-box;
-    
-                  .logomenu {
-                    align-items: center;
-                    //position: relative;
-                    left: 0;
-                    top: 40%;
-                    width: 90px;
-                    height: auto;
-                    max-width: 100%;
-                    box-sizing: border-box;
-                  }
-                }
-            }
-    }
-  
-    .img-box {
-        display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-      }
-      
-      nav {
-        display:flex;
-        flex-flow: row nowrap; // flex flow doit toujours prendre 2 élémentations, concaténation de flex direction et de flex wrap. Le premi row ou column par exemple, et le second si débordement ou à la ligne wrap ou nowrap
-        justify-content: end;
+    /*margin-left: auto;
+      margin-right: auto;*/
+    /*2nde possibilité pour tout centré*/
+
+    .logo {
+      float: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 120px;
+      height: 70px;
+      margin-left: 0px;
+      margin-right: 0px;
+      text-align: center;
+      box-sizing: border-box;
+
+      .logomenu {
         align-items: center;
-        // les 4 lignes du dessus, sont obligatoire à toujorus mettre ensemble
-        gap: 10px;
-        width: 100%;  
-  
-  
-    .menu {
-      font-weight:600;  
-      padding-right: 0px;
-      padding-left:0px;
-      display: none;
-      &.always{
-        display: block;
+        //position: relative;
+        left: 0;
+        top: 40%;
+        width: 90px;
+        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
       }
-      text-decoration: none;
-      color: $black;
-      
     }
-  
-    #contactmenu {
-      border: dotted 1px;  //solid dotted  dashed
-      border-radius: 10px;
-      background-color: rgb(203, 203, 203);
-      padding: 2px 20px 2px 20px ;
-    }
-  
   }
-  
-  
-  @media screen and (min-width : 768px) {
-    .header {
+}
+
+.img-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap; // flex flow doit toujours prendre 2 élémentations, concaténation de flex direction et de flex wrap. Le premi row ou column par exemple, et le second si débordement ou à la ligne wrap ou nowrap
+  justify-content: end;
+  align-items: center;
+  // les 4 lignes du dessus, sont obligatoire à toujorus mettre ensemble
+  gap: 10px;
+  width: 100%;
+
+
+  .menu {
+    font-weight: 600;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: none;
+
+    &.always {
+      display: block;
     }
-  } 
-  
-  
-  @media screen and (min-width : 1024px) {
-    .header { 
-    }  
-   
-    nav{
-        .menu {
-        padding-right: 10px;
-        padding-left: 10px;
-        display: block;
-        }
-  }  
+
+    text-decoration: none;
+    color: $black;
+
+  }
+
+  #contactmenu {
+    border: dotted 1px; //solid dotted  dashed
+    border-radius: 10px;
+    background-color: rgb(203, 203, 203);
+    padding: 2px 20px 2px 20px;
+  }
+
+}
+
+
+@media screen and (min-width : 768px) {
+  .header {}
+}
+
+
+@media screen and (min-width : 1024px) {
+  .header {}
+
+  nav {
+    .menu {
+      padding-right: 10px;
+      padding-left: 10px;
+      display: block;
+    }
+  }
 }

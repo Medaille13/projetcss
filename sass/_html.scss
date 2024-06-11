@@ -1,29 +1,29 @@
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontfamily-var;
+  color: $black;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  // dans un premier temps toujours travailler en padding et si non résultat voulu essayer en margin
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
     padding: 0;
-    box-sizing: border-box;
-    font-family: $fontfamily-var;
-    color: $black;
-  
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+}
 
-  section {
-    // dans un premier temps toujours travailler en padding et si non résultat voulu essayer en margin
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @media screen and (min-width: 768px){
-      padding:0;
-    }
-  }
-
-  /*article {
+/*article {
     /*margin-top: 10px;
     margin-bottom: 10px;
     }*/
@@ -32,12 +32,21 @@
 // un align item sans display flex/grid ne fonctionne pas
 
 
-  h1{@include h1();}    
-  h2{@include h2();}
-  h3{@include h3();}
+h1 {
+  @include h1();
+}
+
+h2 {
+  @include h2();
+}
+
+h3 {
+  @include h3();
+}
 
 .article1 {
-  background-color: blueviolet;
+  //background-color: blueviolet;
+
   .swiper {
     //margin-bottom: 15px;
 
@@ -45,133 +54,199 @@
       object-fit: cover; //contain aussi mais déforme
       height: 300px;
 
-      @media screen and (min-width:768px)
-      {
+      @media screen and (min-width:768px) {
         height: 450px;
       }
     }
   }
-  .content-1{
+
+  .content-1 {
     text-align: center;
   }
 }
 
- 
+
 .article2 {
   @include maxwrap;
-
-  .boite{
+   
+  .boite {
     display: flex;
-    justify-content:flex-start; //tout mon contenu sera aligné  car flex , 
-    flex-flow:column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
-    align-items:center ; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
+    justify-content: flex-start; //tout mon contenu sera aligné  car flex , 
+    flex-flow: column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+    align-items: center; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
     gap: 20px; //permet de faire un espacement sans utiliser margin et padding,   
-    
+
     @media screen and (min-width:1024px) {
-    flex-flow:row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
-    gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
-  }
+      flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+      gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
+    }
+
     font-size: 14px;
 
-    .contenu_1{   
-      text-align: center;   
-      display:flex;
+    .contenu_1 {
+      text-align: center;
+      display: flex;
       justify-content: flex-start;
-      flex-flow:column nowrap;
-      align-items:center;
-      gap:20px;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 20px;
+
       @media screen and (min-width:1024px) {
-        width:50%;
-        text-align:left;
-        align-items:flex-start;
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
 
-    }
+      }
     }
 
-      figure {
-        /*width: 300px;*/
-        @media screen and (min-width:1024px) {
-          width:50%;
-        }
-        img {
-          display:block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; 
-          object-position: center;
-        }
-      }    
+    figure {
+
+      /*width: 300px;*/
+      @media screen and (min-width:1024px) {
+        width: 50%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
   }
 }
 
 
 
-  .article3 {
+.article3 {
+  h2{
+    text-align: start;
+    margin-bottom: 10px;
+  }
+  @include maxwrap;
+  
+  iframe {
     @include maxwrap;
-    iframe{
-      @include maxwrap;
-      display: flex;
-      justify-content: center;
-      flex-flow: nowrap;
-      align-items: center;
-      width:1000px;
-      padding-top: 50px;
-      padding-bottom: 10px;
-    }
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+    align-items: center;
+    width: 1000px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
 
-    .boite2{
-      display: flex;
-      justify-content:flex-end; //tout mon contenu sera aligné  car flex , 
-      flex-flow:column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
-      align-items:center ; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
-      gap: 1000px; //permet de faire un espacement sans utiliser margin et padding,   
-      
-      @media screen and (min-width:1024px) {
-      flex-flow:row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+  .boite2 {
+    display: flex;
+    justify-content: flex-end; //tout mon contenu sera aligné  car flex , 
+    flex-flow: column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+    align-items: center; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
+    gap: 1000px; //permet de faire un espacement sans utiliser margin et padding,   
+
+    @media screen and (min-width:1024px) {
+      flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
       gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
     }
-      font-size: 14px;
 
-      .swiper2 {
-        //max-width: 40px;
-        width: 600px;
-        height: 300px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content:flex-end; //tout mon contenu sera aligné  car flex , 
-        flex-flow:column nowrap;
-        align-items:center ;
+    font-size: 14px;
+
+    .swiper2 {
+      //max-width: 40px;
+      width: 600px;
+      height: 300px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-end; //tout mon contenu sera aligné  car flex , 
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+
+    .contenu_2 {
+      order: -1;
+      text-align: center;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 20px;
+
+      @media screen and (min-width:1024px) {
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
+
       }
-  
-      .contenu_2{   
-        order: -1;
-        text-align: center;   
-        display:flex;
-        justify-content: flex-start;
-        flex-flow:column nowrap;
-        align-items:center;
-        gap:20px;
-        @media screen and (min-width:1024px) {
-          width:50%;
-          text-align:left;
-          align-items:flex-start;
-  
-      }
-    }}
-  }  
+    }
+  }
+}
+
+
+.article4 {
+  @include maxwrap;
+
+  .contenu3 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+
+  }
+}
 
 
 
-  
+.article5 //carte menu restaurant
+
+.slide-content-menu {
+  margin: 0 40px;
+}
+
+.card-menu {
+  width: 320px;
+  background-color: rgb(0, 179, 255);
+
+}
+
+.image-content-menu{
+padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.card-content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content-menu {
+  row-gap: 5px;
+}
+
+
+.card-image-menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card-image-menu .card-img-menu {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 
 //partie ou il y a le swiper et les card successive 
 //le dupliquer et mettre en place le swiper js pour cette partie là
 //et faire la mixin pour la réitération du css  
-.slide-content{
+.slide-content {
   margin: 0 40px;
-}      
+}
 
 .card {
   width: 320px;
@@ -181,23 +256,24 @@
 }
 
 .image-content,
-.card-content{
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
 }
-.image-content{
+
+.image-content {
   row-gap: 5px;
 }
 
 
-.card-image{
+.card-image {
   position: relative;
   height: 150px;
   width: 150px;
-}  
-    
+}
+
 .card-image .card-img {
   height: 100%;
   width: 100%;
@@ -209,4 +285,3 @@
   border: none;
   background-color: rgb(0, 179, 255);
 }
-    
