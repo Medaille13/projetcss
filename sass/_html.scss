@@ -27,10 +27,7 @@ section {
     /*margin-top: 10px;
     margin-bottom: 10px;
     }*/
-
-
 // un align item sans display flex/grid ne fonctionne pas
-
 
 h1 {
   @include h1();
@@ -68,7 +65,7 @@ h3 {
 
 .article2 {
   @include maxwrap;
-   
+
   .boite {
     display: flex;
     justify-content: flex-start; //tout mon contenu sera aligné  car flex , 
@@ -120,12 +117,13 @@ h3 {
 
 
 .article3 {
-  h2{
+  h2 {
     text-align: start;
     margin-bottom: 10px;
   }
+
   @include maxwrap;
-  
+
   iframe {
     @include maxwrap;
     display: flex;
@@ -197,43 +195,335 @@ h3 {
 
 
 
-.article5 //carte menu restaurant
+.article5 {
+  @include maxwrap;
+  padding: 20px 0;
 
-.slide-content-menu {
-  margin: 0 40px;
+  .partie-menu-gauche {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+
+
+    @media (min-width: 1024px) {
+      .partie-menu-gauche {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .premier-bloc-menu {
+    display: flex;
+    justify-content: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+
+  .contenu-premier-bloc-menu {
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .second-bloc-menu {
+    display: flex;
+    justify-content: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+
+    .contenu-second-bloc-menu {
+      display: flex;
+      justify-content: start;
+      flex-flow: column;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+
+  .troisieme-bloc-menu {
+    display: flex;
+    justify-content: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    margin-bottom: 5px;
+
+    .contenu-troisieme-bloc-menu {
+      display: flex;
+      justify-content: start;
+      flex-flow: column;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+
+  .visite-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .partie-menu-droite {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 80px;
+
+
+    .quatrieme-bloc-menu {
+
+      @media screen and (min-width:1024px) {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: stretch;
+        max-width: 100%;
+      }
+
+      .card-menu {
+        background-color: aqua;
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+      }
+
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      /* Add some padding inside the card container */
+      .container {
+        padding: 20px 40px;
+      }
+    }
+  }
+
+
 }
 
-.card-menu {
-  width: 320px;
-  background-color: rgb(0, 179, 255);
 
+.article6 {
+  @include maxwrap;
+  //partie ou il y a le swiper et les card successive 
+  //le dupliquer et mettre en place le swiper js pour cette partie là
+  //et faire la mixin pour la réitération du css  
+
+  .contenu-toute-actualité {
+    width: 100%;
+
+  }
+
+  .texte-actualité h2 {
+    text-align: left;
+  }
+
+  .contenu-toute-actualité-swipe {
+
+    @media screen and (min-width:1024px) {
+      max-width: 300px;
+    }
+
+    #swiper {
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: 300px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .slide-content {
+      margin: 0 40px;
+    }
+
+    .card {
+      width: 320px;
+      border-radius: 20px;
+      background-color: rgb(185, 193, 197);
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+
+    .image-content,
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 14px;
+      gap: 50px;
+
+    }
+
+    .image-content {
+      row-gap: 5px;
+    }
+
+    .card-image {
+      position: relative;
+      height: 150px;
+      width: 150px;
+    }
+
+    .card-image .card-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .button-card {
+      border: none;
+      background-color: rgb(0, 179, 255);
+    }
+
+  }
 }
 
-.image-content-menu{
-padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.card-content-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
+.article7 {
+  @include maxwrap;
+
+  .conteneur-total {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .partie-contact-et-rappel {
+    padding: 40px 0;
+    margin: 40px 0 0;
+  }
+
+  .titre-contact-et-rappel {
+    text-align: center;
+  }
+
+  .background{
+    background-color :blueviolet ;
+    background-repeat: no-repeat;
+    background-size: 1000px 80px;
+    border-radius: 1em;
+  }
+
+  .partie-gauche-et-droite {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  }
 }
 
-.image-content-menu {
-  row-gap: 5px;
+.contenu-contact-gauche {
+  max-width: 400px;
+  margin: 0 20px;
+  border-radius: 1em;
+
+  @media screen and (min-width:1024px) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    background-color: aqua;
+  }
+
+  .contact-photo{
+    display: block;
+    position:relative;
+  }
+  .contact-photo img{
+    width: 100%;
+    border-radius: 1em;
+  }
+  
+  .contenu-contact-text{
+    text-align: center;
+  }
+  
+  .contenu-contact-text-partie1 {
+    @include margin; // ne fonctionne pas
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .contenu-contact-text-partie2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .contenu-contact-text-partie3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
 }
 
-
-.card-image-menu {
-  position: relative;
+.contenu-contact-droite{
+  width: 550px;
+  margin: 0 20px;
+    background-color: aqua;
+    .formulaire-total{
+      max-width: 700px;
+      .checkbox{
+        display: flex;
+               flex-flow: row wrap;
+        
+        align-items: center;
+      
+        justify-content: flex-start;
+      }
+      .checkbox label{
+        
   height: 100%;
   width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+      }
+      }
+    
+
+
+ 
+
+  
+
+  
+
+
+
+
+
+
+
+
+.section333 .card333 .image333 {
+  height: 140px;
+  width: 140px;
 }
 
-.card-image-menu .card-img-menu {
+.section333 .card333 .image333 .img333 {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -241,47 +531,212 @@ padding-right: 0px;
 
 
 
-//partie ou il y a le swiper et les card successive 
-//le dupliquer et mettre en place le swiper js pour cette partie là
-//et faire la mixin pour la réitération du css  
-.slide-content {
-  margin: 0 40px;
-}
 
-.card {
-  width: 320px;
-  border-radius: 25px;
-  background-color: rgb(0, 179, 255);
 
-}
 
-.image-content,
-.card-content {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+/*.menu-complet {
+  .slide-content-menu {
+    margin: 0 40px;
+  }
+  
+  .card-menu {
+    width: 320px;
+    background-color: rgb(0, 179, 255);
+  
+  }
+  
+  .image-content-menu {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .card-content-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  
+  .image-content-menu {
+    row-gap: 5px;
+  }
+  
+  
+  .card-image-menu {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card-image-menu .card-img-menu {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  }*/
+
+// oups
+/*
+.partie-contact-et-rappel .contact {
+  padding: 30px 0 60px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column-reverse nowrap;
   align-items: center;
-  padding: 10px 14px;
+  justify-content: center;
 }
 
-.image-content {
-  row-gap: 5px;
+@media all and (min-width: 1024px) {
+  .partie-contact-et-rappel .contact {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  }
 }
 
-
-.card-image {
+.partie-contact-et-rappel .contact {
+  background-color: rgb(151, 156, 80);
+  color: #FFFFFF;
+  width: 90%;
+  margin: 30px auto;
   position: relative;
-  height: 150px;
-  width: 150px;
+  overflow: hidden;
 }
 
-.card-image .card-img {
-  height: 100%;
+/*@media all and (min-width: 1024px) {
+  .partie-contact-et-rappel .contact {
+    max-width: 400x;
+    margin: 0 20px;
+  }
+}*/
+
+/*.ltp_contact .ltp_containerSect .ltp_sectContact .ltp_containerBv .ltp_containerBvIllu {
+  position: absolute;
   width: 100%;
+  opacity: 0;
+}*/
+/*
+@media all and (min-width: 1024px) {
+  .partie-contact-et-rappel .contact .ltp_containerBv .ltp_containerBvIllu {
+    display: block;
+    position: relative;
+    opacity: 1;
+  }
+}
+
+.partie-contact-et-rappel .contact .contact-photo .ltp_containerBv .ltp_containerBvIllu img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  object-position: center;
 }
 
-
-.button-card {
-  border: none;
-  background-color: rgb(0, 179, 255);
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBv {
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
 }
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBv * {
+  color: #FFFFFF;
+}
+
+@media all and (min-width: 1024px) {
+  .partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBv {
+    height: calc(100% - 280px);    
+    display: flex;    
+    flex-flow: column nowrap;   
+    align-items: center;   
+    justify-content: center;
+  }
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvContact h3,
+.partie-contact-et-rappel .contact .ltp_sectContact .ltp_containerBv .ltp_contentBvLocal h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvContact p,
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal p {
+  font-size: 14px;
+  margin: 10px auto 20px;
+  width: 80%;
+  line-height: 1.4;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvContact a,
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal a {
+
+  display: flex;
+
+ 
+  flex-flow: row nowrap;
+
+  align-items: center;
+
+  justify-content: center;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvContact a i,
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal a i {
+  padding: 0 10px;
+  font-weight: 400;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal {
+  margin: 30px 0 0;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal address {
+  font-style: normal;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  line-height: 1.4;
+}
+
+.partie-contact-et-rappel .contact .ltp_containerBv .ltp_contentBvLocal .ltp_horaires p span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px 0;
+}*/

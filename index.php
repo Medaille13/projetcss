@@ -140,7 +140,7 @@
         <h2>Participez aux Rendez-vous découvertes</h2>
 
         <div class="contenu3">
-        Dès le mois de mars 2021, la résidence Jean-Fontenelle vous ouvre ses portes !
+          Dès le mois de mars 2021, la résidence Jean-Fontenelle vous ouvre ses portes !
           Venez rencontrer notre équipe d'encadrants et animateurs, visitez nos appartements témoins
           et profitez du cadre de vie des résidents.
           Les mesures sanitaires adéquates ont été mises en place pour la protection de tous.
@@ -155,38 +155,52 @@
 
   <section>
     <article class="article5">
-      <h2>Des espaces de convivialité et des services sur-mesure</h2>
-      <div class="premier-bloc-menu">
-        <div class="premier-image-menu"></div>
-        <h3>Des activités favorisant l'autonomie</h3>
-        <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
-      </div>
+      <div class="partie-menu-gauche">
+        <div class="partie1">
+          <h2>Des espaces de convivialité <br> et des services sur-mesure</h2>
+          <div class="premier-bloc-menu">
+            <figure>
+              <img src="./image/par1.jpg" alt="">
+            </figure>
+            <div class="contenu-premier-bloc-menu">
+              <h3>Des activités favorisant l'autonomie</h3>
+              <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
+            </div>
+          </div>
 
-      <div class="second-bloc-menu">
-        <div class="premier-image-menu"></div>
-        <h3>Un cadre naturellement propice aux sorties</h3>
-        <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
-      </div>
+          <div class="second-bloc-menu">
+            <figure>
+              <img src="./image/par2.jpg" alt="">
+            </figure>
+            <div class="contenu-second-bloc-menu">
+              <h3>Un cadre naturellement propice aux sorties</h3>
+              <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
+            </div>
+          </div>
 
-      <div class="troisieme-bloc-menu">
-        <div class="premier-image-menu"></div>
-        <h3>Une équipe expérimentée à vos côtés</h3>
-        <p>Service de téléassistance 7j/7, service de santé et maintien à domicile,</p>
-      </div>
+          <div class="troisieme-bloc-menu">
+            <figure>
+              <img src="./image/par3.jpg" alt="">
+            </figure>
+            <div class="contenu-troisieme-bloc-menu">
+              <h3>Une équipe expérimentée à vos côtés</h3>
+              <p>Service de téléassistance 7j/7, service de santé et maintien à domicile,</p>
+            </div>
+          </div>
 
-      <div class="slide-container-menu">
-        <div class="slide-content-menu">
-          <div class="card-wrapper-menu">
-            <div class="card-menu">
-              <div class="image-content-menu">
-                <div class="overlay-menu">
+          <div class="visite-menu">
+            <button type="submit"><a href="#section7">Organiser une visite</a></button>
+          </div>
+        </div>
+        <div class="partie-menu-droite">
+          <div class="quatrieme-bloc-menu">
+            <div class="contenu-quatrieme-bloc-menu">
 
-                  <div class="card-image-menu">
-                    <img src="image/menu.jpg" class="card-img-menu">
-                  </div>
-                </div>
-                <div class="card-content-menu">
-                  <p class="description-menu">Du lundi au vendredi, le chef du restaurant géré par le CCAS d'Avon, vous propose un menu équilibré, de saison et des repas festifs tout au long de l'année.</p>
+              <div class="card-menu">
+                <img src="./image/menuu.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4>"La table de Fontenelle"</h4>
+                  <p>Du lundi au vendredi, le chef du restaurant géré par le CCAS d'Avon, vous propose un menu équilibré, de saison et des repas festifs tout au long de l'année.</p>
                 </div>
               </div>
             </div>
@@ -196,37 +210,229 @@
     </article>
   </section>
 
-  <section>
+  <section class="section333">
     <article class="article6">
-      <h2>Dernières actualités de la résidence</h2>
-      <div class="slide-container">
-        <div class="slide-content">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="image-content">
-                <div class="overlay">
+      <div class="contenu-toute-actualité">
+        <div class="texte-actualité">
+          <h2>Dernières actualités de la résidence</h2>
+        </div>
+        <div class="contenu-toute-actualité-swipe">
 
-                  <div class="card-image">
-                    <img src="" alt="" class="card-img">
+          <div class="container333">
+            <div class="content333">
+              <div class="card333">
+                <div class="card-content333">
+                  <div class="image333">
+                    <img src="/image/aaa.avif" alt="">
                   </div>
-                </div>
-                <div class="card-content">
-                  <h3>Mai 24, 2024</h3>
-                  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
-                  <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
-                  <button class="button-card">Read more</button>
                 </div>
               </div>
             </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Slider main container -->
+          <div class="swiper swiper-multicards" id="swiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide card">
+                <div class="image-content">
+                  <div class="overlay">
+                    <div class="card-image">
+                      <img src="./image/bbb.png" alt="" class="card-img">
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h3>December 29, 2019</h3>
+                    <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
+                    <button class="button-card">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="image-content">
+                  <div class="overlay">
+                    <div class="card-image">
+                      <img src="./image/aaa.avif" alt="" class="card-img">
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h3>Mai 24, 2024</h3>
+                    <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
+                    <button class="button-card">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="image-content">
+                  <div class="overlay">
+                    <div class="card-image">
+                      <img src="./image/ccc.png" alt="" class="card-img">
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h3>juillet 24, 2024</h3>
+                    <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
+                    <button class="button-card">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="image-content">
+                  <div class="overlay">
+                    <div class="card-image">
+                      <img src="./image/ccc.png" alt="" class="card-img">
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h3>juin 24, 2024</h3>
+                    <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
+                    <button class="button-card">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
     </article>
   </section>
+
 
   <section>
     <article class="article7">
+    <div class="background">
+      <div class="partie-contact-et-rappel">
+          <div class="conteneur-total">
+            <div class="titre-contact-et-rappel">
+              <h2>Contactez-nous</h2>
+            </div>
+          </div>
+          <div class="partie-gauche-et-droite">
+            <div class="contenu-contact-gauche">
+              <div class="contact">
+                <div class="contact-photo">
+                  <img src="./image/plaquette-immobiliere.jpg">
+                </div>
+                <div class="contenu-contact-text">
+                  <div class="contenu-contact-text-partie1">
+                    <h3>Contactez la résidence</h3>
+                    <p>Nos équipes sont à votre disposition pour répondre à toutes vos questions</p>
+                    <img src="./image/téléphone.png" alt=""><a>01 632 960 985</a>
+                  </div>
+                  <div class="contenu-contact-text-partie2">
+                    <h3>Résidence Autonomie Jean Fontenelle</h3>
+                    <address>16, rue Jean Fontenelle <br> 77210 AVON
+                    </address>
+                    <div class="contenu-contact-text-partie3">
+                      <p>Du lundi au vendredi de 9h à 12h30<br>
+                        et de 14h30 à 17h.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="contenu-contact-droite">
+              <form method="post" class="formulaire-total" id="form">
+                <fieldset>
+                  <p><strong>Vous souhaitez</strong></p>
+                </fieldset>
+                <div class="checkbox">
+                  <div class="checkbox-premier">
+                    <input type="checkbox" name="" id="rappel" value="rappel">
+                    <label for="rappel"><span>Être rappelé</label>
+                  </div>
+                  <div class="checkbox-second">
+                    <input type="checkbox" name="" id="visite" value="visite">
+                    <label for="visite">Organiserune visite</label>
+                  </div>
+                </div>
+                <fieldset>
+                  <p>Vos coordonnées</p>
+                </fieldset>
+                <div class="formulaire-1">
+                  <div class="selection">
+                  <label for="civility">Civilité*</label>
+                  <div class="checkbox-civilite-premier">
+                    <input type="checkbox" name="" id="monsieur" value="monsieur">
+                    <label for="monsieur"><span>Monsieur</label>
+                  </div>
+                  <div class="checkbox-civilite-second">
+                  <input type="checkbox" name="" id="madame" value="madame">   
+                  <label for="madame"><span>Madame</label>                 
+                  </div>
+                </div>
+                <div class="formulaire">
+                  <div class="nom">
+                    <input id="name" type="text" name="lastname">
+                    <label for="name">Nom*</label>
+                  </div>
+                  <div class="prenom">
+                    <input id="nickname" type="text" name="nickname">
+                    <label for="nickname">Prénom*</label>
+                  </div>
+                </div>
+                <div class="email">
+                  <div class="mail">
+                    <input id="email" type="email" name="email">
+                    <label for="email">Email*</label>
+                  </div>
+                  <div class="numero">
+                    <input id="telephone" type="tel" name="telephone">
+                    <label for="telephone">Téléphone*</label>
+                  </div>
+                </div>
+
+                <fieldset>
+                  <p>Votre recherche*</p>
+                </fieldset>
+                <div class="">
+                  <div class="">
+                    <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
+                    <label for="t1bis">T1Bis</label>
+                  </div>
+                  <div class="">
+                    <input type="checkbox" name="t2" id="t2" value="t2">
+                    <label for="t2">T2</label>
+                  </div>
+                </div>
+                <div class="">
+                    <input type="checkbox" name="t3" id="t3" value="t3">
+                    <label for="t3">T3</label>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="">
+                    <input type="checkbox" name="" id="" value="">
+                    <label for=""></label>
+                  </div>
+                </div>
+                <div class="envoi">
+                  <button type="submit" class="">
+                    <span>Envoyer</span>
+                  </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
   </section>
 
