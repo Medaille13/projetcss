@@ -195,16 +195,32 @@ h3 {
 
 
 
+
 .article5 {
   @include maxwrap;
   padding: 20px 0;
 
   .partie-menu-gauche {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
+    gap:80px;
+
+    @media screen and (min-width:1024px) {
+  flex-flow: row nowrap;
+
+    }
+
+    
+    .partie1{
+      display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+    }
 
 
     @media (min-width: 1024px) {
@@ -226,9 +242,17 @@ h3 {
     align-items: center;
     gap: 10px;
     margin-bottom: 5px;
+
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    }
   }
 
   .contenu-premier-bloc-menu {
+    width: 100%;
     display: flex;
     justify-content: start;
     flex-flow: column;
@@ -244,7 +268,15 @@ h3 {
     gap: 10px;
     margin-bottom: 5px;
 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      }
+
     .contenu-second-bloc-menu {
+      width: 100%;
       display: flex;
       justify-content: start;
       flex-flow: column;
@@ -259,8 +291,17 @@ h3 {
     flex-flow: nowrap;
     align-items: center;
     margin-bottom: 5px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      }
+
 
     .contenu-troisieme-bloc-menu {
+      width: 100%;
       display: flex;
       justify-content: start;
       flex-flow: column;
@@ -282,7 +323,6 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-left: 80px;
 
 
     .quatrieme-bloc-menu {
@@ -402,13 +442,14 @@ h3 {
 
 .article7 {
   @include maxwrap;
+  padding-bottom: 10px;
 
   .conteneur-total {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
   }
-
+  
   .partie-contact-et-rappel {
     padding: 40px 0;
     margin: 40px 0 0;
@@ -416,15 +457,18 @@ h3 {
 
   .titre-contact-et-rappel {
     text-align: center;
+    position: relative;
   }
 
-  .background{
-    background-color :blueviolet ;
-    background-repeat: no-repeat;
-    background-size: 1000px 80px;
-    border-radius: 1em;
-  }
-
+  
+    .background::before{
+      content: "";
+      height: 300px;
+      width:1000px ;
+      background-color: pink;
+      position:absolute;
+      border-radius: 5px;
+    } 
   .partie-gauche-et-droite {
     display: flex;
     flex-flow: row nowrap;
@@ -436,98 +480,86 @@ h3 {
   max-width: 400px;
   margin: 0 20px;
   border-radius: 1em;
+  
 
   @media screen and (min-width:1024px) {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
-    background-color: aqua;
+    background-color: rgb(210, 207, 207);
   }
 
-  .contact-photo{
+  .contact-photo {
     display: block;
-    position:relative;
+    position: relative;
   }
-  .contact-photo img{
+
+  .contact-photo img {
     width: 100%;
     border-radius: 1em;
   }
-  
-  .contenu-contact-text{
+
+  .contenu-contact-text {
     text-align: center;
   }
-  
+
   .contenu-contact-text-partie1 {
     @include margin; // ne fonctionne pas
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
+
   .contenu-contact-text-partie2 {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
+
   .contenu-contact-text-partie3 {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
+
 }
 
-.contenu-contact-droite{
-  width: 550px;
+.contenu-contact-droite {
+  width: 450px;
   margin: 0 20px;
-    background-color: aqua;
-    .formulaire-total{
-      max-width: 700px;
-      .checkbox{
-        display: flex;
-               flex-flow: row wrap;
-        
-        align-items: center;
-      
-        justify-content: flex-start;
-      }
-      .checkbox label{
-        
-  height: 100%;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-}
-      }
-      }
-    
+  background-color: rgb(210, 207, 207);
+  position: relative;
+  border-radius: 1em;
 
 
- 
-
-  
-
-  
-
-
+  @media screen and (min-width:1024px) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
 
 
+  .formulaire-total {
+    max-width: 700px;
 
+    .checkbox {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
+    .checkbox label {
 
-
-.section333 .card333 .image333 {
-  height: 140px;
-  width: 140px;
+      height: 100%;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
-.section333 .card333 .image333 .img333 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 
 
 

@@ -16,16 +16,16 @@
         <a href=""><img src="./image/logo.jpg" alt="" class="logomenu"></a>
       </div>
       <nav id="menu-haut">
-        <a href="#section1" class="menu">Présentation</a>
-        <a href="#section2" class="menu">La résidence</a>
-        <a href="#section1" class="menu">Les services</a>
-        <a href="#section1" class="menu">Actualités</a>
-        <a href="#section7" class="menu" id="contactmenu">Contact</a>
+        <a href="#presentation" class="menu">Présentation</a>
+        <a href="#residence" class="menu">La résidence</a>
+        <a href="#services" class="menu">Les services</a>
+        <a href="#actualites" class="menu">Actualités</a>
+        <a href="#contact" class="menu" id="contactmenu">Contact</a>
         <a href="tel:0160749300" class="menu always">01 60 74 93 00</a>
       </nav>
     </div>
   </header>
-  <section>
+  <section id="presentation">
     <article class="article1">
 
       <!-- Slider main container -->
@@ -55,7 +55,7 @@
     </article>
   </section>
 
-  <section>
+  <section id="residence">
     <article class="article2">
       <h2>Un concept accessible, pour les seniors aux envies de liberté et de sécurité</h2>
 
@@ -82,7 +82,7 @@
     </article>
   </section>
 
-  <section>
+  <section id="services">
     <article class="article3">
       <h2>La Résidence Jean Fontenelle</h2>
       <div>Située au sein du vieil Avon, la résidence Jean Fontenelle offre à ses habitants une haute qualité de vie au coeur d'un
@@ -134,7 +134,7 @@
 
   </section>
 
-  <section>
+  <section id="actualites">
     <article class="article4">
       <div class="boite3">
         <h2>Participez aux Rendez-vous découvertes</h2>
@@ -153,11 +153,11 @@
     </article>
   </section>
 
-  <section>
+  <section id="contact">
     <article class="article5">
       <div class="partie-menu-gauche">
         <div class="partie1">
-          <h2>Des espaces de convivialité <br> et des services sur-mesure</h2>
+          <h3>Des espaces de convivialité <br> et des services sur-mesure</h3>
           <div class="premier-bloc-menu">
             <figure>
               <img src="./image/par1.jpg" alt="">
@@ -216,32 +216,8 @@
         <div class="texte-actualité">
           <h2>Dernières actualités de la résidence</h2>
         </div>
-        <div class="contenu-toute-actualité-swipe">
-
-          <div class="container333">
-            <div class="content333">
-              <div class="card333">
-                <div class="card-content333">
-                  <div class="image333">
-                    <img src="/image/aaa.avif" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-          <!-- Slider main container -->
-          <div class="swiper swiper-multicards" id="swiper3">
+        <div class="contenu-toute-actualité-swipe"><!-- Slider main container -->
+          <div class="swipe swiper-multicards" id="swiper3">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -312,16 +288,17 @@
       </div>
     </article>
   </section>
+  ajouter before (pseudo element), c'est lui qui aura l'élement de couleur, qui sera en background de ce bloc
 
-
-  <section>
+  <section id="contact">
     <article class="article7">
-    <div class="background">
-      <div class="partie-contact-et-rappel">
+      <div class="background">
+        <div class="partie-contact-et-rappel">
           <div class="conteneur-total">
             <div class="titre-contact-et-rappel">
               <h2>Contactez-nous</h2>
             </div>
+          </div>
           </div>
           <div class="partie-gauche-et-droite">
             <div class="contenu-contact-gauche">
@@ -350,9 +327,9 @@
 
             <div class="contenu-contact-droite">
               <form method="post" class="formulaire-total" id="form">
-                <fieldset>
+                <div>
                   <p><strong>Vous souhaitez</strong></p>
-                </fieldset>
+                </div>
                 <div class="checkbox">
                   <div class="checkbox-premier">
                     <input type="checkbox" name="" id="rappel" value="rappel">
@@ -363,56 +340,50 @@
                     <label for="visite">Organiserune visite</label>
                   </div>
                 </div>
-                <fieldset>
-                  <p>Vos coordonnées</p>
-                </fieldset>
                 <div class="formulaire-1">
                   <div class="selection">
-                  <label for="civility">Civilité*</label>
-                  <div class="checkbox-civilite-premier">
-                    <input type="checkbox" name="" id="monsieur" value="monsieur">
-                    <label for="monsieur"><span>Monsieur</label>
+                    <label for="civility">Civilité*</label>
+                    <div class="checkbox-civilite-premier">
+                      <input type="checkbox" name="" id="monsieur" value="monsieur">
+                      <label for="monsieur"><span>Monsieur</label>
+                    </div>
+                    <div class="checkbox-civilite-second">
+                      <input type="checkbox" name="" id="madame" value="madame">
+                      <label for="madame"><span>Madame</label>
+                    </div>
                   </div>
-                  <div class="checkbox-civilite-second">
-                  <input type="checkbox" name="" id="madame" value="madame">   
-                  <label for="madame"><span>Madame</label>                 
+                  <div class="formulaire">
+                    <div class="nom">
+                      <input id="name" type="text" name="lastname">
+                      <label for="name">Nom*</label>
+                    </div>
+                    <div class="prenom">
+                      <input id="nickname" type="text" name="nickname">
+                      <label for="nickname">Prénom*</label>
+                    </div>
                   </div>
-                </div>
-                <div class="formulaire">
-                  <div class="nom">
-                    <input id="name" type="text" name="lastname">
-                    <label for="name">Nom*</label>
+                  <div class="email">
+                    <div class="mail">
+                      <input id="email" type="email" name="email">
+                      <label for="email">Email*</label>
+                    </div>
+                    <div class="numero">
+                      <input id="telephone" type="tel" name="telephone">
+                      <label for="telephone">Téléphone*</label>
+                    </div>
                   </div>
-                  <div class="prenom">
-                    <input id="nickname" type="text" name="nickname">
-                    <label for="nickname">Prénom*</label>
-                  </div>
-                </div>
-                <div class="email">
-                  <div class="mail">
-                    <input id="email" type="email" name="email">
-                    <label for="email">Email*</label>
-                  </div>
-                  <div class="numero">
-                    <input id="telephone" type="tel" name="telephone">
-                    <label for="telephone">Téléphone*</label>
-                  </div>
-                </div>
-
-                <fieldset>
-                  <p>Votre recherche*</p>
-                </fieldset>
-                <div class="">
+                    <p><strong>Recherche</strong></p>
                   <div class="">
-                    <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
-                    <label for="t1bis">T1Bis</label>
+                    <div class="">
+                      <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
+                      <label for="t1bis">T1Bis</label>
+                    </div>
+                    <div class="">
+                      <input type="checkbox" name="t2" id="t2" value="t2">
+                      <label for="t2">T2</label>
+                    </div>
                   </div>
                   <div class="">
-                    <input type="checkbox" name="t2" id="t2" value="t2">
-                    <label for="t2">T2</label>
-                  </div>
-                </div>
-                <div class="">
                     <input type="checkbox" name="t3" id="t3" value="t3">
                     <label for="t3">T3</label>
                   </div>
@@ -432,7 +403,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
     </article>
   </section>
 

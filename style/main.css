@@ -212,10 +212,23 @@ h3 {
 }
 .article5 .partie-menu-gauche {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
   text-align: left;
+  gap: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .article5 .partie-menu-gauche {
+    flex-flow: row nowrap;
+  }
+}
+.article5 .partie-menu-gauche .partie1 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
 }
 @media (min-width: 1024px) {
   .article5 .partie-menu-gauche .partie-menu-gauche {
@@ -235,7 +248,14 @@ h3 {
   gap: 10px;
   margin-bottom: 5px;
 }
+.article5 .premier-bloc-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .article5 .contenu-premier-bloc-menu {
+  width: 100%;
   display: flex;
   justify-content: start;
   flex-flow: column;
@@ -250,7 +270,14 @@ h3 {
   gap: 10px;
   margin-bottom: 5px;
 }
+.article5 .second-bloc-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .article5 .second-bloc-menu .contenu-second-bloc-menu {
+  width: 100%;
   display: flex;
   justify-content: start;
   flex-flow: column;
@@ -264,7 +291,14 @@ h3 {
   align-items: center;
   margin-bottom: 5px;
 }
+.article5 .troisieme-bloc-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .article5 .troisieme-bloc-menu .contenu-troisieme-bloc-menu {
+  width: 100%;
   display: flex;
   justify-content: start;
   flex-flow: column;
@@ -281,7 +315,6 @@ h3 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-left: 80px;
 }
 .article5 .partie-menu-droite .quatrieme-bloc-menu {
   /* On mouse-over, add a deeper shadow */
@@ -381,6 +414,7 @@ h3 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
 }
 .article7 .conteneur-total {
   width: 100%;
@@ -393,12 +427,15 @@ h3 {
 }
 .article7 .titre-contact-et-rappel {
   text-align: center;
+  position: relative;
 }
-.article7 .background {
-  background-color: blueviolet;
-  background-repeat: no-repeat;
-  background-size: 1000px 80px;
-  border-radius: 1em;
+.article7 .background::before {
+  content: "";
+  height: 300px;
+  width: 1000px;
+  background-color: pink;
+  position: absolute;
+  border-radius: 5px;
 }
 .article7 .partie-gauche-et-droite {
   display: flex;
@@ -416,7 +453,7 @@ h3 {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
-    background-color: aqua;
+    background-color: rgb(210, 207, 207);
   }
 }
 .contenu-contact-gauche .contact-photo {
@@ -446,9 +483,18 @@ h3 {
 }
 
 .contenu-contact-droite {
-  width: 550px;
+  width: 450px;
   margin: 0 20px;
-  background-color: aqua;
+  background-color: rgb(210, 207, 207);
+  position: relative;
+  border-radius: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .contenu-contact-droite {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
 }
 .contenu-contact-droite .formulaire-total {
   max-width: 700px;
@@ -468,17 +514,6 @@ h3 {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-}
-
-.section333 .card333 .image333 {
-  height: 140px;
-  width: 140px;
-}
-
-.section333 .card333 .image333 .img333 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 /*.menu-complet {
