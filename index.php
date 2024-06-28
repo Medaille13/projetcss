@@ -217,7 +217,7 @@
           <h2>Dernières actualités de la résidence</h2>
         </div>
         <div class="contenu-toute-actualité-swipe"><!-- Slider main container -->
-          <div class="swipe swiper-multicards" id="swiper3">
+          <div class="swiper swiper-multicards" id="swiper3">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -277,9 +277,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-
+            </div>            
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -290,15 +288,13 @@
   </section>
   ajouter before (pseudo element), c'est lui qui aura l'élement de couleur, qui sera en background de ce bloc
 
-  <section id="contact">
+  <section id="contact" class="background">
     <article class="article7">
-      <div class="background">
         <div class="partie-contact-et-rappel">
           <div class="conteneur-total">
             <div class="titre-contact-et-rappel">
               <h2>Contactez-nous</h2>
             </div>
-          </div>
           </div>
           <div class="partie-gauche-et-droite">
             <div class="contenu-contact-gauche">

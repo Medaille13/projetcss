@@ -355,33 +355,15 @@ h3 {
 .article6 .texte-actualité h2 {
   text-align: left;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .article6 .contenu-toute-actualité-swipe {
-    max-width: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
-.article6 .contenu-toute-actualité-swipe #swiper {
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  height: 300px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: column;
-  align-items: center;
-}
-.article6 .contenu-toute-actualité-swipe .slide-content {
-  margin: 0 40px;
-}
 .article6 .contenu-toute-actualité-swipe .card {
-  width: 320px;
   border-radius: 20px;
   background-color: rgb(185, 193, 197);
-  margin-bottom: 10px;
-  margin-left: 10px;
 }
 .article6 .contenu-toute-actualité-swipe .image-content,
 .article6 .contenu-toute-actualité-swipe .card-content {
@@ -409,6 +391,21 @@ h3 {
   background-color: rgb(0, 179, 255);
 }
 
+.background {
+  position: relative;
+}
+.background:before {
+  content: "";
+  top: 0;
+  display: block;
+  height: 300px;
+  background-color: pink;
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+}
+
 .article7 {
   width: 100%;
   max-width: 1000px;
@@ -428,14 +425,6 @@ h3 {
 .article7 .titre-contact-et-rappel {
   text-align: center;
   position: relative;
-}
-.article7 .background::before {
-  content: "";
-  height: 300px;
-  width: 1000px;
-  background-color: pink;
-  position: absolute;
-  border-radius: 5px;
 }
 .article7 .partie-gauche-et-droite {
   display: flex;

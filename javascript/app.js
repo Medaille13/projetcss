@@ -42,21 +42,29 @@
 });
 
 const swiper3 = new Swiper('#swiper3', {
-  // Optional parameters
-  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 10,
   loop: true,
 
-
-  // If we need pagination
   pagination: {
     el: '#swiper3 .swiper-pagination',
     clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '#swiper3 .swiper-button-next',
     prevEl: '#swiper3 .swiper-button-prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 
 });

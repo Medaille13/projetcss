@@ -206,20 +206,20 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    gap:80px;
+    gap: 80px;
 
     @media screen and (min-width:1024px) {
-  flex-flow: row nowrap;
+      flex-flow: row nowrap;
 
     }
 
-    
-    .partie1{
+
+    .partie1 {
       display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
     }
 
 
@@ -244,10 +244,10 @@ h3 {
     margin-bottom: 5px;
 
     img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
     }
   }
 
@@ -273,7 +273,7 @@ h3 {
       height: 100%;
       object-fit: contain;
       object-position: center;
-      }
+    }
 
     .contenu-second-bloc-menu {
       width: 100%;
@@ -291,13 +291,13 @@ h3 {
     flex-flow: nowrap;
     align-items: center;
     margin-bottom: 5px;
-    
+
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       object-position: center;
-      }
+    }
 
 
     .contenu-troisieme-bloc-menu {
@@ -367,7 +367,6 @@ h3 {
 
   .contenu-toute-actualité {
     width: 100%;
-
   }
 
   .texte-actualité h2 {
@@ -376,34 +375,18 @@ h3 {
 
   .contenu-toute-actualité-swipe {
 
-    @media screen and (min-width:1024px) {
-      max-width: 300px;
+    @media screen and (min-width:768px) {
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
-    #swiper {
-      max-width: 350px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 600px;
-      height: 300px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: flex-start;
-      flex-flow: column;
-      align-items: center;
-    }
 
-    .slide-content {
-      margin: 0 40px;
-    }
+//en mobile et tablette je laisse les fleches sur les slides, et à partir de 1024px je les sors. Voir peut-être 1100/1400px 
+//aatention au  padding-left: 40px;      padding-right: 40px; qui vont me gêner, peut être mettre en dessous
 
     .card {
-      width: 320px;
       border-radius: 20px;
       background-color: rgb(185, 193, 197);
-      margin-bottom: 10px;
-      margin-left: 10px;
     }
 
     .image-content,
@@ -440,16 +423,33 @@ h3 {
   }
 }
 
+
+.background {
+  position:relative;
+  &:before {
+    content:"";
+    top:0;
+    display: block;    // obligé de le mettre en block sinon il ne prend pas la height   // à ce dire : content vide = display block 
+    height: 300px;
+    background-color: pink;
+    position: absolute;
+    border-radius: 5px;
+    left:0;
+    right: 0;
+  }
+}
+
 .article7 {
   @include maxwrap;
   padding-bottom: 10px;
+
 
   .conteneur-total {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
   }
-  
+
   .partie-contact-et-rappel {
     padding: 40px 0;
     margin: 40px 0 0;
@@ -460,15 +460,8 @@ h3 {
     position: relative;
   }
 
-  
-    .background::before{
-      content: "";
-      height: 300px;
-      width:1000px ;
-      background-color: pink;
-      position:absolute;
-      border-radius: 5px;
-    } 
+
+
   .partie-gauche-et-droite {
     display: flex;
     flex-flow: row nowrap;
@@ -480,7 +473,7 @@ h3 {
   max-width: 400px;
   margin: 0 20px;
   border-radius: 1em;
-  
+
 
   @media screen and (min-width:1024px) {
     display: flex;
