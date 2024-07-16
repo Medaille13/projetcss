@@ -532,14 +532,44 @@ h3 {
   .formulaire-total {
     max-width: 700px;
 
+    .souhait {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    hr{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
     .checkbox {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
-      justify-content: flex-start;
+      justify-content:space-around;
     }
 
-    .checkbox label {
+    .formulaire-1{
+      margin-left: 40px;
+
+      .sexe{
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        justify-content:flex-start;
+        margin-bottom: 10px;
+     }
+      .checkbox-civilite-premier .checkbox-civilite-second{
+        display: flex;   
+      }
+
+      .checkbox-civilite-premier{
+        margin-right: 20px;
+      }
+    }
+
+    /*.checkbox label {
 
       height: 100%;
       width: 100%;
@@ -549,7 +579,7 @@ h3 {
       flex-flow: row nowrap;
       align-items: center;
       justify-content: center;
-    }
+    }*/
   }
 }
 

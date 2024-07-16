@@ -323,22 +323,24 @@
 
             <div class="contenu-contact-droite">
               <form method="post" class="formulaire-total" id="form">
-                <div>
-                  <p><strong>Vous souhaitez</strong></p>
+                <div class="souhait">
+                  <h3>Vous souhaitez</p>
                 </div>
                 <div class="checkbox">
                   <div class="checkbox-premier">
                     <input type="checkbox" name="" id="rappel" value="rappel">
-                    <label for="rappel"><span>Être rappelé</label>
+                    <label for="rappel">Être rappelé</label>
                   </div>
                   <div class="checkbox-second">
                     <input type="checkbox" name="" id="visite" value="visite">
                     <label for="visite">Organiserune visite</label>
                   </div>
                 </div>
+                <hr>
                 <div class="formulaire-1">
                   <div class="selection">
                     <label for="civility">Civilité*</label>
+                    <div class="sexe">
                     <div class="checkbox-civilite-premier">
                       <input type="checkbox" name="" id="monsieur" value="monsieur">
                       <label for="monsieur"><span>Monsieur</label>
@@ -346,6 +348,7 @@
                     <div class="checkbox-civilite-second">
                       <input type="checkbox" name="" id="madame" value="madame">
                       <label for="madame"><span>Madame</label>
+                    </div>
                     </div>
                   </div>
                   <div class="formulaire">
