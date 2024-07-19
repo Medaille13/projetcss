@@ -114,3 +114,7 @@
 @mixin card() {
     //je peux appeler la mixin date_card et button_card au bon endroit les autres mixin
 }
+
+@mixin mytext() {
+    width:150px;
+}

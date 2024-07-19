@@ -277,7 +277,7 @@
                   </div>
                 </div>
               </div>
-            </div>            
+            </div>
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -290,57 +290,57 @@
 
   <section id="contact" class="background">
     <article class="article7">
-        <div class="partie-contact-et-rappel">
-          <div class="conteneur-total">
-            <div class="titre-contact-et-rappel">
-              <h2>Contactez-nous</h2>
-            </div>
+      <div class="partie-contact-et-rappel">
+        <div class="conteneur-total">
+          <div class="titre-contact-et-rappel">
+            <h2>Contactez-nous</h2>
           </div>
-          <div class="partie-gauche-et-droite">
-            <div class="contenu-contact-gauche">
-              <div class="contact">
-                <div class="contact-photo">
-                  <img src="./image/plaquette-immobiliere.jpg">
+        </div>
+        <div class="partie-gauche-et-droite">
+          <div class="contenu-contact-gauche">
+            <div class="contact">
+              <div class="contact-photo">
+                <img src="./image/plaquette-immobiliere.jpg">
+              </div>
+              <div class="contenu-contact-text">
+                <div class="contenu-contact-text-partie1">
+                  <h3>Contactez la résidence</h3>
+                  <p>Nos équipes sont à votre disposition pour répondre à toutes vos questions</p>
+                  <img src="./image/téléphone.png" alt=""><a>01 632 960 985</a>
                 </div>
-                <div class="contenu-contact-text">
-                  <div class="contenu-contact-text-partie1">
-                    <h3>Contactez la résidence</h3>
-                    <p>Nos équipes sont à votre disposition pour répondre à toutes vos questions</p>
-                    <img src="./image/téléphone.png" alt=""><a>01 632 960 985</a>
-                  </div>
-                  <div class="contenu-contact-text-partie2">
-                    <h3>Résidence Autonomie Jean Fontenelle</h3>
-                    <address>16, rue Jean Fontenelle <br> 77210 AVON
-                    </address>
-                    <div class="contenu-contact-text-partie3">
-                      <p>Du lundi au vendredi de 9h à 12h30<br>
-                        et de 14h30 à 17h.</p>
-                    </div>
+                <div class="contenu-contact-text-partie2">
+                  <h3>Résidence Autonomie Jean Fontenelle</h3>
+                  <address>16, rue Jean Fontenelle <br> 77210 AVON
+                  </address>
+                  <div class="contenu-contact-text-partie3">
+                    <p>Du lundi au vendredi de 9h à 12h30<br>
+                      et de 14h30 à 17h.</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="contenu-contact-droite">
-              <form method="post" class="formulaire-total" id="form">
-                <div class="souhait">
-                  <h3>Vous souhaitez</p>
+          <div class="contenu-contact-droite">
+            <form method="post" class="formulaire-total" id="form">
+              <div class="souhait">
+                <h3>Vous souhaitez</p>
+              </div>
+              <div class="checkbox">
+                <div class="checkbox-premier">
+                  <input type="checkbox" name="" id="rappel" value="rappel">
+                  <label for="rappel">Être rappelé</label>
                 </div>
-                <div class="checkbox">
-                  <div class="checkbox-premier">
-                    <input type="checkbox" name="" id="rappel" value="rappel">
-                    <label for="rappel">Être rappelé</label>
-                  </div>
-                  <div class="checkbox-second">
-                    <input type="checkbox" name="" id="visite" value="visite">
-                    <label for="visite">Organiserune visite</label>
-                  </div>
+                <div class="checkbox-second">
+                  <input type="checkbox" name="" id="visite" value="visite">
+                  <label for="visite">Organiserune visite</label>
                 </div>
-                <hr>
-                <div class="formulaire-1">
-                  <div class="selection">
-                    <label for="civility">Civilité*</label>
-                    <div class="sexe">
+              </div>
+              <hr>
+              <div class="formulaire-1">
+                <div class="selection">
+                  <label for="civility">Civilité*</label>
+                  <div class="sexe">
                     <div class="checkbox-civilite-premier">
                       <input type="checkbox" name="" id="monsieur" value="monsieur">
                       <label for="monsieur"><span>Monsieur</label>
@@ -349,60 +349,64 @@
                       <input type="checkbox" name="" id="madame" value="madame">
                       <label for="madame"><span>Madame</label>
                     </div>
-                    </div>
                   </div>
-                  <div class="formulaire">
+                </div>
+                <div class="formulaire">
+                  <div class="nom-prenom">
                     <div class="nom">
-                      <input id="name" type="text" name="lastname">
-                      <label for="name">Nom*</label>
+                    <label for="name">Nom*</label><br>
+                      <input id="name" type="text" name="lastname" class="mytext"> 
                     </div>
                     <div class="prenom">
-                      <input id="nickname" type="text" name="nickname">
-                      <label for="nickname">Prénom*</label>
+                    <label for="nickname">Prénom*</label><br>
+                      <input id="nickname" type="text" name="nickname" class="mytext">
                     </div>
                   </div>
+                </div>
+                <div class="email-numero">
                   <div class="email">
                     <div class="mail">
-                      <input id="email" type="email" name="email">
-                      <label for="email">Email*</label>
+                    <label for="email">Email*</label><br>
+                      <input id="email" type="email" name="email" class="mytext">
                     </div>
                     <div class="numero">
-                      <input id="telephone" type="tel" name="telephone">
-                      <label for="telephone">Téléphone*</label>
+                    <label for="telephone">Téléphone*</label><br>
+                      <input id="telephone" type="tel" name="telephone" class="mytext">
                     </div>
-                  </div>
-                    <p><strong>Recherche</strong></p>
-                  <div class="">
-                    <div class="">
-                      <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
-                      <label for="t1bis">T1Bis</label>
-                    </div>
-                    <div class="">
-                      <input type="checkbox" name="t2" id="t2" value="t2">
-                      <label for="t2">T2</label>
-                    </div>
-                  </div>
-                  <div class="">
-                    <input type="checkbox" name="t3" id="t3" value="t3">
-                    <label for="t3">T3</label>
                   </div>
                 </div>
-
+                <p><strong>Recherche</strong></p>
                 <div class="">
                   <div class="">
-                    <input type="checkbox" name="" id="" value="">
-                    <label for=""></label>
+                    <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
+                    <label for="t1bis">T1Bis</label>
+                  </div>
+                  <div class="">
+                    <input type="checkbox" name="t2" id="t2" value="t2">
+                    <label for="t2">T2</label>
                   </div>
                 </div>
-                <div class="envoi">
-                  <button type="submit" class="">
-                    <span>Envoyer</span>
-                  </button>
-              </form>
-            </div>
+                <div class="">
+                  <input type="checkbox" name="t3" id="t3" value="t3">
+                  <label for="t3">T3</label>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <input type="checkbox" name="" id="" value="">
+                  <label for=""></label>
+                </div>
+              </div>
+              <div class="envoi">
+                <button type="submit" class="">
+                  <span>Envoyer</span>
+                </button>
+            </form>
           </div>
         </div>
-      
+      </div>
+
     </article>
   </section>
 

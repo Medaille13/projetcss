@@ -41,6 +41,10 @@ h3 {
   @include h3();
 }
 
+.mytext {
+  @include mytext();
+}
+
 .article1 {
   //background-color: blueviolet;
 
@@ -567,6 +571,51 @@ h3 {
       .checkbox-civilite-premier{
         margin-right: 20px;
       }
+
+      .nom-prenom{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .nom{
+          display: inline-block;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        }
+        .prenom{
+          display: inline-block;
+          position: relative;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        }       
+        
+        .email-numero{
+          display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .mail{
+          display: inline-block;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        }
+        .numero{
+          display: inline-block;
+          position: relative;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        }    
+      }  
+      }
+
+
+      
     }
 
     /*.checkbox label {
