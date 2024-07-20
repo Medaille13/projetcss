@@ -63,7 +63,13 @@ h3 {
 }
 
 .mytext {
-  width: 150px;
+  width: 170px;
+  height: 35px;
+}
+
+.mycheck {
+  width: 18px;
+  height: 18px;
 }
 
 .article1 .swiper .swiper-slide {
@@ -491,21 +497,10 @@ h3 {
 }
 .contenu-contact-droite .formulaire-total {
   max-width: 700px;
-  /*.checkbox label {
-
-    height: 100%;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-  }*/
 }
 .contenu-contact-droite .formulaire-total .souhait {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .contenu-contact-droite .formulaire-total hr {
@@ -517,6 +512,10 @@ h3 {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
+}
+.contenu-contact-droite .formulaire-total .civility {
+  margin-bottom: 12px;
 }
 .contenu-contact-droite .formulaire-total .formulaire-1 {
   margin-left: 40px;
@@ -539,13 +538,14 @@ h3 {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 .contenu-contact-droite .formulaire-total .formulaire-1 .nom-prenom .nom {
   display: inline-block;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 .contenu-contact-droite .formulaire-total .formulaire-1 .nom-prenom .prenom {
   display: inline-block;
@@ -554,25 +554,47 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-.contenu-contact-droite .formulaire-total .formulaire-1 .nom-prenom .email-numero {
+.contenu-contact-droite .formulaire-total .formulaire-1 .recherche {
+  margin-bottom: 10px;
+}
+.contenu-contact-droite .formulaire-total .formulaire-1 .formulaire-contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.contenu-contact-droite .formulaire-total .formulaire-1 .formulaire-contact .email-numero {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.contenu-contact-droite .formulaire-total .formulaire-1 .nom-prenom .email-numero .mail {
+.contenu-contact-droite .formulaire-total .formulaire-1 .formulaire-contact .email-numero .mail {
   display: inline-block;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 25px;
 }
-.contenu-contact-droite .formulaire-total .formulaire-1 .nom-prenom .email-numero .numero {
-  display: inline-block;
-  position: relative;
+.contenu-contact-droite .formulaire-total .formulaire-1 .type-logement {
+  display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 75px;
+}
+.contenu-contact-droite .formulaire-total .formulaire-1 .type-logement .t1 {
+  display: block;
+  margin-right: 40px;
+}
+.contenu-contact-droite .formulaire-total .formulaire-1 .type-logement .t2 {
+  display: block;
+  margin-right: 40px;
+}
+.contenu-contact-droite .formulaire-total .formulaire-1 .type-logement .t3 {
+  display: block;
+  margin-right: 40px;
 }
 
 /*.menu-complet {

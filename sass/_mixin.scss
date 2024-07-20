@@ -116,5 +116,11 @@
 }
 
 @mixin mytext() {
-    width:150px;
+    width: 170px;
+    height: 35px;
+}
+
+@mixin mycheck() {
+    width: 18px;
+    height: 18px;
 }

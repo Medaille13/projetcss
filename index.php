@@ -328,18 +328,20 @@
               </div>
               <div class="checkbox">
                 <div class="checkbox-premier">
-                  <input type="checkbox" name="" id="rappel" value="rappel">
+                  <input type="checkbox" name="" id="rappel" value="rappel" class="mycheck">
                   <label for="rappel">Être rappelé</label>
                 </div>
                 <div class="checkbox-second">
-                  <input type="checkbox" name="" id="visite" value="visite">
-                  <label for="visite">Organiserune visite</label>
+                  <input type="checkbox" name="" id="visite" value="visite" class="mycheck">
+                  <label for="visite">Organiser une visite</label>
                 </div>
               </div>
               <hr>
               <div class="formulaire-1">
                 <div class="selection">
+                  <div class="civility">
                   <label for="civility">Civilité*</label>
+                  </div>
                   <div class="sexe">
                     <div class="checkbox-civilite-premier">
                       <input type="checkbox" name="" id="monsieur" value="monsieur">
@@ -363,8 +365,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="email-numero">
-                  <div class="email">
+                <div class="formulaire-contact">
+                  <div class="email-numero">
                     <div class="mail">
                     <label for="email">Email*</label><br>
                       <input id="email" type="email" name="email" class="mytext">
@@ -375,26 +377,29 @@
                     </div>
                   </div>
                 </div>
+                <div class="recherche">
                 <p><strong>Recherche</strong></p>
-                <div class="">
-                  <div class="">
-                    <input type="checkbox" name="t1bis" id="t1bis" value="t1bis">
+                </div>
+                <div class="type-logement">
+                  <div class="t1">
+                    <input type="checkbox" name="t1bis" id="t1bis" value="t1bis" class="mycheck">
                     <label for="t1bis">T1Bis</label>
                   </div>
-                  <div class="">
-                    <input type="checkbox" name="t2" id="t2" value="t2">
+                  <div class="t2">
+                    <input type="checkbox" name="t2" id="t2" value="t2" class="mycheck">
                     <label for="t2">T2</label>
                   </div>
-                </div>
-                <div class="">
-                  <input type="checkbox" name="t3" id="t3" value="t3">
+                
+                <div class="t3">
+                  <input type="checkbox" name="t3" id="t3" value="t3" class="mycheck">
                   <label for="t3">T3</label>
+                </div>
                 </div>
               </div>
 
               <div class="">
                 <div class="">
-                  <input type="checkbox" name="" id="" value="">
+                  <input type="checkbox" name="" id="" value="" class="mycheck">
                   <label for=""></label>
                 </div>
               </div>
