@@ -286,7 +286,6 @@
       </div>
     </article>
   </section>
-  ajouter before (pseudo element), c'est lui qui aura l'élement de couleur, qui sera en background de ce bloc
 
   <section id="contact" class="background">
     <article class="article7">

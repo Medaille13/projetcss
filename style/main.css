@@ -72,6 +72,10 @@ h3 {
   height: 18px;
 }
 
+/*#aaa::after,
+#bbb::after{
+  content: '';
+}*/
 .article1 .swiper .swiper-slide {
   object-fit: cover;
   height: 300px;
@@ -369,6 +373,23 @@ h3 {
   .article6 .contenu-toute-actualité-swipe {
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .article6 .contenu-toute-actualité-swipe {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .article6 .contenu-toute-actualité-swipe #swiper3 {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .article6 .contenu-toute-actualité-swipe .swiper-button-prev {
+    left: 0;
+  }
+  .article6 .contenu-toute-actualité-swipe .swiper-button-next {
+    right: 0;
   }
 }
 .article6 .contenu-toute-actualité-swipe .card {
