@@ -54,6 +54,10 @@ h3 {
   content: '';
 }*/
 
+.mixin_button {
+  @include button();
+}
+
 .article1 {
   //background-color: blueviolet;
 
@@ -182,6 +186,17 @@ h3 {
       flex-flow: column nowrap;
       align-items: center;
       gap: 20px;
+      margin-top: 10px;
+
+      .text_contenu_2{
+        display: flex;
+
+        .brochure {
+          display: flex;
+          align-items: center;
+          margin-top: 5px
+        }
+      }
 
       @media screen and (min-width:1024px) {
         width: 50%;
@@ -190,6 +205,7 @@ h3 {
 
       }
     }
+    
   }
 }
 
@@ -398,18 +414,34 @@ h3 {
       padding-left: 10px;
       padding-right: 10px;
 
-      #swiper3{
+      #swiper3 {
         position: relative;
         width: 100%;
         padding: 0 30px;
-      }   
+      }
+
+      #size1024 {
+        position: absolute;
+        left: -1px;
+      }
+
+      #size1025 {
+        position: absolute;
+        right: -1px;
+      }
+
       
-      .swiper-button-prev{
+
+      //-- = variable css
+      //root = initialisation*/
+
+
+      /*.swiper-button-prev{
         left: 0;
       }
       .swiper-button-next{
         right: 0;
-      }
+      }*/
     }
 
     //en mobile et tablette je laisse les fleches sur les slides, et à partir de 1024px je les sors. Voir peut-être 1100/1400px 
@@ -426,7 +458,7 @@ h3 {
       flex-direction: column;
       align-items: center;
       padding: 10px 14px;
-      gap: 50px;
+      gap: 20px;
 
     }
 
@@ -447,9 +479,17 @@ h3 {
     }
 
     .button-card {
-      border: none;
-      background-color: rgb(0, 179, 255);
+      align-self: flex-start; //dépend des parents pour ensuite faire le style dans la boite dans laquelle je suis
+      display: flex;
+      flex-direction: column;
+      flex-flow: nowrap;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-size: 12px;
     }
+
+    
   }
 }
 
@@ -538,6 +578,19 @@ h3 {
     padding-bottom: 15px;
   }
 
+  .pcss-phone {
+    background-color: aqua;
+    border-radius: 800px;
+    gap: 5px;
+  }
+  .pcss-number {
+    display: inline-flex;
+    align-items: center;
+    //margin-left: 10px;
+    //margin-top: 10px;
+    margin: 30px 10px;
+  }
+
   .contenu-contact-text-partie3 {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -581,9 +634,11 @@ h3 {
       justify-content: space-around;
       margin-bottom: 20px;
     }
-.civility{
-  margin-bottom: 12px;
-}
+
+    .civility {
+      margin-bottom: 12px;
+    }
+
     .formulaire-1 {
       margin-left: 40px;
 
@@ -627,9 +682,10 @@ h3 {
         }
       }
 
-      .recherche{
+      .recherche {
         margin-bottom: 10px;
       }
+
       .formulaire-contact {
         display: flex;
         flex-flow: row nowrap;
@@ -661,18 +717,18 @@ h3 {
         margin-bottom: 75px;
 
         .t1 {
-          display: block;     
-          margin-right: 40px;     
+          display: block;
+          margin-right: 40px;
         }
 
         .t2 {
           display: block;
-          margin-right: 40px;     
+          margin-right: 40px;
         }
 
         .t3 {
           display: block;
-          margin-right: 40px;     
+          margin-right: 40px;
         }
       }
     }
@@ -891,3 +947,5 @@ h3 {
   font-weight: 500;
   padding: 5px 0;
 }*/
+
+//https://sentry.io/answers/

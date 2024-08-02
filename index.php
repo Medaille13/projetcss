@@ -113,6 +113,7 @@
         </div>
 
         <div class="contenu_2">
+          <div class="text_contenu_2">
           <p>
             La résidence fait peau neuve en 2020 grâce à un projet de
             rénovation ambitieux qui assure un confort optimal aux
@@ -125,11 +126,12 @@
             certains sont destinés aux personnes à mobilité réduite, en
             rez-de-chaussée.
           </p>
-          <a href="https://sentry.io/answers/">
-            <button>Consulter la brochure</button>
-          </a>
-        </div>
+          </div>
+          <div class="brochure"></div>
+                    <button class="mixin_button">Consulter<br> la brochure</button>
+                  </div>
       </div>
+      
     </article>
 
   </section>
@@ -189,7 +191,7 @@
           </div>
 
           <div class="visite-menu">
-            <button type="submit"><a href="#section7">Organiser une visite</a></button>
+            <button type="submit"><a href="#section7" class="mixin_button">Organiser une visite</a></button>
           </div>
         </div>
         <div class="partie-menu-droite">
@@ -231,7 +233,7 @@
                   <div class="card-content">
                     <h3>December 29, 2019</h3>
                     <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
-                    <button class="button-card">Read more</button>
+                    <a class="button-card" href="#"><span>Read more</span> <span class="pcss-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
@@ -245,7 +247,7 @@
                   <div class="card-content">
                     <h3>Mai 24, 2024</h3>
                     <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
-                    <button class="button-card">Read more</button>
+                    <a class="button-card" href="#"><span>Read more</span> <span class="pcss-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
@@ -257,9 +259,9 @@
                     </div>
                   </div>
                   <div class="card-content">
-                    <h3>juillet 24, 2024</h3>
+                    <h3>Juillet 24, 2024</h3>
                     <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
-                    <button class="button-card">Read more</button>
+                    <a class="button-card" href="#"><span>Read more</span> <span class="pcss-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
@@ -271,16 +273,16 @@
                     </div>
                   </div>
                   <div class="card-content">
-                    <h3>juin 24, 2024</h3>
+                    <h3>Juin 24, 2024</h3>
                     <p class="description">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</p>
-                    <button class="button-card">Read more</button>
+                    <a class="button-card" href="#"><span>Read more</span> <span class="pcss-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" id="size1024"></div>
+            <div class="swiper-button-next" id="size1025"></div>
           </div>
         </div>
       </div>
@@ -305,7 +307,7 @@
                 <div class="contenu-contact-text-partie1">
                   <h3>Contactez la résidence</h3>
                   <p>Nos équipes sont à votre disposition pour répondre à toutes vos questions</p>
-                  <img src="./image/téléphone.png" alt=""><a>01 632 960 985</a>
+                  <span class="pcss-phone"></span><span class="pcss-number">01 632 960 985<span>
                 </div>
                 <div class="contenu-contact-text-partie2">
                   <h3>Résidence Autonomie Jean Fontenelle</h3>
@@ -403,7 +405,7 @@
                 </div>
               </div>
               <div class="envoi">
-                <button type="submit" class="">
+                <button type="submit" class="mixin_button">
                   <span>Envoyer</span>
                 </button>
             </form>
