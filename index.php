@@ -55,7 +55,7 @@
     </article>
   </section>
 
-  <section id="residence">
+  <section>
     <article class="article2">
       <h2>Un concept accessible, pour les seniors aux envies de liberté et de sécurité</h2>
 
@@ -82,7 +82,7 @@
     </article>
   </section>
 
-  <section id="services">
+  <section id="residence">
     <article class="article3">
       <h2>La Résidence Jean Fontenelle</h2>
       <div>Située au sein du vieil Avon, la résidence Jean Fontenelle offre à ses habitants une haute qualité de vie au coeur d'un
@@ -114,48 +114,29 @@
 
         <div class="contenu_2">
           <div class="text_contenu_2">
-          <p>
-            La résidence fait peau neuve en 2020 grâce à un projet de
-            rénovation ambitieux qui assure un confort optimal aux
-            habitants et lieu de vie actuel. Une terrasse et un salon
-            climatisé ont notamment été créés pour assurer le bien
-            être de chacun lors des beaux jours. <br><br>
+            <p>
+              La résidence fait peau neuve en 2020 grâce à un projet de
+              rénovation ambitieux qui assure un confort optimal aux
+              habitants et lieu de vie actuel. Une terrasse et un salon
+              climatisé ont notamment été créés pour assurer le bien
+              être de chacun lors des beaux jours. <br><br>
 
-            La résidence Jean-Fontenelle propose des logements
-            entièrement refaits à neuf, allant du T1Bis au T2, dont
-            certains sont destinés aux personnes à mobilité réduite, en
-            rez-de-chaussée.
-          </p>
+              La résidence Jean-Fontenelle propose des logements
+              entièrement refaits à neuf, allant du T1Bis au T2, dont
+              certains sont destinés aux personnes à mobilité réduite, en
+              rez-de-chaussée.
+            </p>
           </div>
-          <div class="brochure"></div>
-                    <button class="mixin_button">Consulter<br> la brochure</button>
-                  </div>
-      </div>
-      
-    </article>
-
-  </section>
-
-  <section id="actualites">
-    <article class="article4">
-      <div class="boite3">
-        <h2>Participez aux Rendez-vous découvertes</h2>
-
-        <div class="contenu3">
-          Dès le mois de mars 2021, la résidence Jean-Fontenelle vous ouvre ses portes !
-          Venez rencontrer notre équipe d'encadrants et animateurs, visitez nos appartements témoins
-          et profitez du cadre de vie des résidents.
-          Les mesures sanitaires adéquates ont été mises en place pour la protection de tous.
-          Au plaisir de vous rencontrer !</div>
-      </div>
-      <div class="button1">
-
+          <div class="brochure">
+            <a href="#contact" class="mixin_button">Consulter<br>la brochure</a>
+          </div>
+        </div>
       </div>
 
     </article>
   </section>
 
-  <section id="contact">
+  <section id="services">
     <article class="article5">
       <div class="partie-menu-gauche">
         <div class="partie1">
@@ -191,7 +172,7 @@
           </div>
 
           <div class="visite-menu">
-            <button type="submit"><a href="#section7" class="mixin_button">Organiser une visite</a></button>
+            <a href="#contact" class="mixin_button">Organiser une visite</a>
           </div>
         </div>
         <div class="partie-menu-droite">
@@ -212,7 +193,7 @@
     </article>
   </section>
 
-  <section class="section333">
+  <section class="section333" id="actualites">
     <article class="article6">
       <div class="contenu-toute-actualité">
         <div class="texte-actualité">
@@ -307,7 +288,7 @@
                 <div class="contenu-contact-text-partie1">
                   <h3>Contactez la résidence</h3>
                   <p>Nos équipes sont à votre disposition pour répondre à toutes vos questions</p>
-                  <span class="pcss-phone"></span><span class="pcss-number">01 632 960 985<span>
+                  <p><span class="pcss-phone"></span><span class="number">01 632 960 985<span></p>
                 </div>
                 <div class="contenu-contact-text-partie2">
                   <h3>Résidence Autonomie Jean Fontenelle</h3>
@@ -341,15 +322,15 @@
               <div class="formulaire-1">
                 <div class="selection">
                   <div class="civility">
-                  <label for="civility">Civilité*</label>
+                    <label>Civilité*</label>
                   </div>
                   <div class="sexe">
                     <div class="checkbox-civilite-premier">
-                      <input type="checkbox" name="" id="monsieur" value="monsieur">
+                      <input type="radio" name="civility" id="monsieur" value="monsieur">
                       <label for="monsieur"><span>Monsieur</label>
                     </div>
                     <div class="checkbox-civilite-second">
-                      <input type="checkbox" name="" id="madame" value="madame">
+                      <input type="radio" name="civility" id="madame" value="madame">
                       <label for="madame"><span>Madame</label>
                     </div>
                   </div>
@@ -357,11 +338,11 @@
                 <div class="formulaire">
                   <div class="nom-prenom">
                     <div class="nom">
-                    <label for="name">Nom*</label><br>
-                      <input id="name" type="text" name="lastname" class="mytext"> 
+                      <label for="name">Nom*</label><br>
+                      <input id="name" type="text" name="lastname" class="mytext">
                     </div>
                     <div class="prenom">
-                    <label for="nickname">Prénom*</label><br>
+                      <label for="nickname">Prénom*</label><br>
                       <input id="nickname" type="text" name="nickname" class="mytext">
                     </div>
                   </div>
@@ -369,17 +350,17 @@
                 <div class="formulaire-contact">
                   <div class="email-numero">
                     <div class="mail">
-                    <label for="email">Email*</label><br>
+                      <label for="email">Email*</label><br>
                       <input id="email" type="email" name="email" class="mytext">
                     </div>
                     <div class="numero">
-                    <label for="telephone">Téléphone*</label><br>
+                      <label for="telephone">Téléphone*</label><br>
                       <input id="telephone" type="tel" name="telephone" class="mytext">
                     </div>
                   </div>
                 </div>
                 <div class="recherche">
-                <p><strong>Recherche</strong></p>
+                  <p><strong>Recherche</strong></p>
                 </div>
                 <div class="type-logement">
                   <div class="t1">
@@ -390,24 +371,22 @@
                     <input type="checkbox" name="t2" id="t2" value="t2" class="mycheck">
                     <label for="t2">T2</label>
                   </div>
-                
-                <div class="t3">
-                  <input type="checkbox" name="t3" id="t3" value="t3" class="mycheck">
-                  <label for="t3">T3</label>
-                </div>
+
+                  <div class="t3">
+                    <input type="checkbox" name="t3" id="t3" value="t3" class="mycheck">
+                    <label for="t3">T3</label>
+                  </div>
                 </div>
               </div>
 
               <div class="">
                 <div class="">
-                  <input type="checkbox" name="" id="" value="" class="mycheck">
-                  <label for=""></label>
+                  <input type="checkbox" name="consent" id="consentement" value="" class="mycheck">
+                  <label for="consentement">*consentement</label>
                 </div>
               </div>
               <div class="envoi">
-                <button type="submit" class="mixin_button">
-                  <span>Envoyer</span>
-                </button>
+                <button type="submit" class="mixin_button">Envoyer</button>
             </form>
           </div>
         </div>
