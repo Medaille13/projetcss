@@ -58,7 +58,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   section {
-    padding: 0;
+    /*padding: 0;*/
   }
 }
 
@@ -123,17 +123,24 @@ h3 {
   cursor: pointer;
 }
 
-.article1 .swiper .swiper-slide {
+.presentation {
+  padding-left: 0;
+  padding-right: 0;
+}
+.presentation .article1 .swiper .swiper-slide {
   object-fit: cover;
   height: 300px;
 }
 @media screen and (min-width: 768px) {
-  .article1 .swiper .swiper-slide {
+  .presentation .article1 .swiper .swiper-slide {
     height: 450px;
   }
 }
-.article1 .content-1 {
+.presentation .article1 .content-1 {
+  padding-top: 40px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .article2 {
@@ -152,7 +159,7 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .article2 .boite {
-    flex-flow: row-reverse nowrap;
+    flex-flow: row nowrap;
     gap: 40px;
   }
 }
@@ -172,11 +179,12 @@ h3 {
   }
 }
 .article2 .boite figure {
-  /*width: 300px;*/
+  max-width: 500px;
 }
 @media screen and (min-width: 1024px) {
   .article2 .boite figure {
     width: 50%;
+    max-width: none;
   }
 }
 .article2 .boite figure img {
@@ -193,29 +201,36 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-.article3 h2 {
+.article3 h2,
+.article3 div {
   text-align: start;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .article3 h2,
+  .article3 div {
+    text-align: center;
+  }
+}
 .article3 iframe {
-  width: 100%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  flex-flow: nowrap;
   align-items: center;
-  width: 1000px;
   padding-top: 15px;
   padding-bottom: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .article3 iframe {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+  }
 }
 .article3 .boite2 {
   display: flex;
   justify-content: flex-end;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 1000px;
+  gap: 50px;
   font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
@@ -233,6 +248,13 @@ h3 {
   justify-content: flex-end;
   flex-flow: column nowrap;
   align-items: center;
+  /*@media screen and (max-width:634px) {
+    flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+    gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }*/
 }
 .article3 .boite2 .contenu_2 {
   order: -1;
@@ -241,7 +263,7 @@ h3 {
   justify-content: flex-start;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 10px;
 }
 .article3 .boite2 .contenu_2 .text_contenu_2 {
@@ -297,8 +319,21 @@ h3 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .article5 .partie-menu-gauche .partie1 {
+    align-items: center;
+  }
+}
+.article5 .partie-menu-gauche .partie1 h3 {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .article5 .partie-menu-gauche .partie1 h3 {
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   .article5 .partie-menu-gauche .partie-menu-gauche {
@@ -392,11 +427,15 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .article5 .partie-menu-droite .quatrieme-bloc-menu {
-    display: flex;
+    /*display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: stretch;
-    max-width: 100%;
+    max-width: 100%;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
   }
 }
 .article5 .partie-menu-droite .quatrieme-bloc-menu .card-menu {
@@ -529,8 +568,15 @@ h3 {
 }
 .article7 .partie-gauche-et-droite {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column-reverse nowrap;
   align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .article7 .partie-gauche-et-droite {
+    flex-flow: row nowrap;
+  }
 }
 
 .contenu-contact-gauche {
@@ -567,9 +613,9 @@ h3 {
     background-color: greenyellow;
   }*/
   /* & + .contenu-contact-text-partie2 {
-     padding: 10px;
-     background-color: yellow;
-   }*/
+    padding: 10px;
+    background-color: yellow;
+  }*/
 }
 .contenu-contact-gauche .contenu-contact-text-partie1 > p:nth-last-of-type(1) {
   margin-top: 30px;
@@ -600,6 +646,7 @@ h3 {
   background-color: rgb(210, 207, 207);
   position: relative;
   border-radius: 1em;
+  border: 1px solid grey;
 }
 @media screen and (min-width: 1024px) {
   .contenu-contact-droite {
@@ -710,6 +757,44 @@ h3 {
   margin-right: 40px;
 }
 
+.myCheckbox .myCheckbox_container input {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  left: -9999px;
+  z-index: -1;
+}
+.myCheckbox .myCheckbox_container input + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.myCheckbox .myCheckbox_container input + label:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  border: 1px solid black;
+  top: 3px;
+}
+.myCheckbox .myCheckbox_container input:checked + label:before {
+  background-color: goldenrod;
+}
+
+/*
+z-index: 1;
+
+  @media screen and (max-width:1024px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    //order: -1;
+    z-index: 1;
+  }
+
+  */
 /*.menu-complet {
   .slide-content-menu {
     margin: 0 40px;

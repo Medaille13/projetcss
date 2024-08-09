@@ -25,7 +25,7 @@
       </nav>
     </div>
   </header>
-  <section id="presentation">
+  <section id="presentation" class="presentation">
     <article class="article1">
 
       <!-- Slider main container -->
@@ -60,9 +60,7 @@
       <h2>Un concept accessible, pour les seniors aux envies de liberté et de sécurité</h2>
 
       <div class="boite">
-        <figure>
-          <img src="./image/visuel_1.jpg" alt="">
-        </figure>
+       
         <div class="contenu_1">
           <p>Short explanation of your company's partnership
             program and policy. Lorem ipsum dolor sit amet,
@@ -78,6 +76,9 @@
             dignissim dui eget consectetur sodales.</p>
 
         </div>
+        <figure>
+          <img src="./image/visuel_1.jpg" alt="">
+        </figure>
       </div>
     </article>
   </section>
@@ -87,7 +88,7 @@
       <h2>La Résidence Jean Fontenelle</h2>
       <div>Située au sein du vieil Avon, la résidence Jean Fontenelle offre à ses habitants une haute qualité de vie au coeur d'un
         emplacement prisé et facilement accessible.</div>
-      <div>
+      <div class="iframe">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11616.788867339683!2d5.403443199999999!3d43.289191450000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1713997811370!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
@@ -146,7 +147,7 @@
               <img src="./image/par1.jpg" alt="">
             </figure>
             <div class="contenu-premier-bloc-menu">
-              <h3>Des activités favorisant l'autonomie</h3>
+              <h4>Des activités favorisant l'autonomie</h4>
               <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
             </div>
           </div>
@@ -156,7 +157,7 @@
               <img src="./image/par2.jpg" alt="">
             </figure>
             <div class="contenu-second-bloc-menu">
-              <h3>Un cadre naturellement propice aux sorties</h3>
+              <h4>Un cadre naturellement propice aux sorties</h4>
               <p>Des activités hebdomadaires sont proposées et ont vocations à préserver l'autonomie des habitants : gym douce atelier mémoire, tai-chi, art floral...</p>
             </div>
           </div>
@@ -166,7 +167,7 @@
               <img src="./image/par3.jpg" alt="">
             </figure>
             <div class="contenu-troisieme-bloc-menu">
-              <h3>Une équipe expérimentée à vos côtés</h3>
+              <h4>Une équipe expérimentée à vos côtés</h4>
               <p>Service de téléassistance 7j/7, service de santé et maintien à domicile,</p>
             </div>
           </div>
@@ -308,13 +309,13 @@
               <div class="souhait">
                 <h3>Vous souhaitez</p>
               </div>
-              <div class="checkbox">
-                <div class="checkbox-premier">
-                  <input type="checkbox" name="" id="rappel" value="rappel" class="mycheck">
+              <div class="checkbox myCheckbox">
+                <div class="checkbox-premier myCheckbox_container">
+                  <input type="checkbox" name="souhait" id="rappel" value="rappel" class="mycheck">
                   <label for="rappel">Être rappelé</label>
                 </div>
-                <div class="checkbox-second">
-                  <input type="checkbox" name="" id="visite" value="visite" class="mycheck">
+                <div class="checkbox-second myCheckbox_container">
+                  <input type="checkbox" name="souhait" id="visite" value="visite" class="mycheck">
                   <label for="visite">Organiser une visite</label>
                 </div>
               </div>
@@ -362,17 +363,17 @@
                 <div class="recherche">
                   <p><strong>Recherche</strong></p>
                 </div>
-                <div class="type-logement">
-                  <div class="t1">
+                <div class="type-logement myCheckbox">
+                  <div class="t1 myCheckbox_container">
                     <input type="checkbox" name="t1bis" id="t1bis" value="t1bis" class="mycheck">
                     <label for="t1bis">T1Bis</label>
                   </div>
-                  <div class="t2">
+                  <div class="t2 myCheckbox_container">
                     <input type="checkbox" name="t2" id="t2" value="t2" class="mycheck">
                     <label for="t2">T2</label>
                   </div>
 
-                  <div class="t3">
+                  <div class="t3 myCheckbox_container">
                     <input type="checkbox" name="t3" id="t3" value="t3" class="mycheck">
                     <label for="t3">T3</label>
                   </div>

@@ -19,7 +19,7 @@ section {
   padding-bottom: 10px;
 
   @media screen and (min-width: 768px) {
-    padding: 0;
+    /*padding: 0;*/
   }
 }
 
@@ -58,26 +58,36 @@ h3 {
   @include button();
 }
 
-.article1 {
-  //background-color: blueviolet;
+.presentation {
+  padding-left: 0;
+  padding-right: 0;
 
-  .swiper {
-    //margin-bottom: 15px;
+  .article1 {
+    //background-color: blueviolet;
 
-    .swiper-slide {
-      object-fit: cover; //contain aussi mais déforme
-      height: 300px;
+    .swiper {
+      //margin-bottom: 15px;
 
-      @media screen and (min-width:768px) {
-        height: 450px;
+      .swiper-slide {
+        object-fit: cover; //contain aussi mais déforme
+        height: 300px;
+
+        @media screen and (min-width:768px) {
+          height: 450px;
+        }
       }
     }
-  }
 
-  .content-1 {
-    text-align: center;
+    .content-1 {
+      padding-top: 40px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
+
+
 
 
 .article2 {
@@ -91,7 +101,7 @@ h3 {
     gap: 20px; //permet de faire un espacement sans utiliser margin et padding,   
 
     @media screen and (min-width:1024px) {
-      flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+      flex-flow: row nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
       gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
     }
 
@@ -114,10 +124,11 @@ h3 {
     }
 
     figure {
+      max-width: 500px;
 
-      /*width: 300px;*/
       @media screen and (min-width:1024px) {
         width: 50%;
+        max-width: none;
       }
 
       img {
@@ -134,22 +145,29 @@ h3 {
 
 
 .article3 {
-  h2 {
-    text-align: start;
-    margin-bottom: 10px;
-  }
-
   @include maxwrap;
 
+  h2,
+  div {
+    text-align: start;
+    margin-bottom: 10px;
+
+    @media screen and (max-width:1024px) {
+      text-align: center;
+    }
+  }
+
   iframe {
-    @include maxwrap;
-    display: flex;
-    justify-content: center;
-    flex-flow: nowrap;
     align-items: center;
-    width: 1000px;
     padding-top: 15px;
     padding-bottom: 10px;
+    width: 100%;
+
+    @media screen and (max-width:1024px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+    }
   }
 
   .boite2 {
@@ -157,7 +175,7 @@ h3 {
     justify-content: flex-end; //tout mon contenu sera aligné  car flex , 
     flex-flow: column nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
     align-items: center; //quand on est en row ce sera aligné par la hauteur, si column ce sera de gauche à droite // flex start par défaut
-    gap: 1000px; //permet de faire un espacement sans utiliser margin et padding,   
+    gap: 50px; //permet de faire un espacement sans utiliser margin et padding,   
 
     @media screen and (min-width:1024px) {
       flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
@@ -176,6 +194,14 @@ h3 {
       justify-content: flex-end; //tout mon contenu sera aligné  car flex , 
       flex-flow: column nowrap;
       align-items: center;
+
+      /*@media screen and (max-width:634px) {
+        flex-flow: row-reverse nowrap; //flex ligne ou colonne, et flow si retour à la ligne ou pas
+        gap: 40px; //permet de faire un espacement sans utiliser margin et padding,
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }*/
     }
 
     .contenu_2 {
@@ -185,10 +211,10 @@ h3 {
       justify-content: flex-start;
       flex-flow: column nowrap;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
       margin-top: 10px;
 
-      .text_contenu_2{
+      .text_contenu_2 {
         display: flex;
 
         .brochure {
@@ -205,7 +231,7 @@ h3 {
 
       }
     }
-    
+
   }
 }
 
@@ -247,8 +273,20 @@ h3 {
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
-      align-items: center;
+      align-items: stretch;
       gap: 30px;
+
+      @media screen and (min-width:1024px) {
+        align-items: center;
+      }
+
+      h3 {
+        text-align: center;
+
+        @media screen and (min-width:1024px) {
+          text-align: left;
+        }
+      }
     }
 
 
@@ -357,11 +395,17 @@ h3 {
     .quatrieme-bloc-menu {
 
       @media screen and (min-width:1024px) {
-        display: flex;
+        /*display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: stretch;
-        max-width: 100%;
+        max-width: 100%;*/
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-flow: column;
+
       }
 
       .card-menu {
@@ -370,6 +414,7 @@ h3 {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         width: 100%;
+
       }
 
       /* On mouse-over, add a deeper shadow */
@@ -430,7 +475,7 @@ h3 {
         right: -1px;
       }
 
-      
+
 
       //-- = variable css
       //root = initialisation*/
@@ -489,7 +534,7 @@ h3 {
       font-size: 12px;
     }
 
-    
+
   }
 }
 
@@ -535,8 +580,15 @@ h3 {
 
   .partie-gauche-et-droite {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column-reverse nowrap;
     align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+
+     @media screen and (min-width:1024px){
+      flex-flow:  row  nowrap;
+     }
+      
   }
 }
 
@@ -545,14 +597,14 @@ h3 {
   margin: 0 20px;
   border-radius: 1em;
   border: 1px solid grey;
-  
+
 
 
   @media screen and (min-width:1024px) {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
-    
+
   }
 
 
@@ -580,13 +632,13 @@ h3 {
       margin-top: 10px;
       background-color: greenyellow;
     }*/
-    
-    & > p:nth-last-of-type(1){
+
+    &>p:nth-last-of-type(1) {
       margin-top: 30px;
       //background-color: red;
     }
-    
-   /* & + .contenu-contact-text-partie2 {
+
+    /* & + .contenu-contact-text-partie2 {
       padding: 10px;
       background-color: yellow;
     }*/
@@ -612,7 +664,7 @@ h3 {
     padding-bottom: 15px;
   }
 
- 
+
 
   .contenu-contact-text-partie3 {
     padding-top: 15px;
@@ -627,7 +679,7 @@ h3 {
   background-color: rgb(210, 207, 207);
   position: relative;
   border-radius: 1em;
-
+  border: 1px solid grey;
 
   @media screen and (min-width:1024px) {
     display: flex;
@@ -758,7 +810,50 @@ h3 {
   }
 }
 
+.myCheckbox{    //& rappeler la classe d'avance et l'espace de la seconde class, en css classique .checkbox.Mycheckbox
+  .myCheckbox_container{
+    input{
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      left: -9999px;
+      z-index: -1;
+      & + label{
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        
+        &:before{
+          content:'';
+          display: block;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          left: 0;
+          border: 1px solid black;
+          top: 3px; //si changement de taille, modifier le top
+        }
+      }
+      &:checked + label{ 
+        &:before{
+          background-color: goldenrod;
+        }
+      }
+    }
+  }
+}
+/*
+z-index: 1;
 
+  @media screen and (max-width:1024px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    //order: -1;
+    z-index: 1;
+  }
+
+  */
 
 
 
